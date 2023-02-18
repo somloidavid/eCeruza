@@ -1,4 +1,4 @@
-# **Ceruza**
+# **eCeruza**
 
 ## Tanár
 - Tanított osztályok megtekintése
