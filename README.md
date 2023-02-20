@@ -3,7 +3,7 @@
 ## Tanár
 - Tanított osztályok megtekintése
   - Filter tantárgyanként
-- Jegyek, feljegyzések szerkesztése szereksztése
+- Jegyek, feljegyzések szerkesztése
   - Súlyozott jegyek
 - Saját, osztály órarendje
 - Események létrehozása
