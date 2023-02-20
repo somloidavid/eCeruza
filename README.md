@@ -14,3 +14,6 @@
 - Saját órarend
 - Átlagszámítások
 - Hiányzások
+
+
+*Figma: https://www.figma.com/file/IhfEI0ZgFIr9ujVigP32SM/eCeruza?node-id=0%3A1&t=cCNi6nf2E3aa3zRW-0*
