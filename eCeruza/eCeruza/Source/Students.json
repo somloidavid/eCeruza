@@ -1,0 +1,21 @@
+﻿[
+  {
+    "Name": "Teszt Elek",
+    "Class": "9A",
+    "Subjects": "",
+    "Grades": [
+      {
+        "Subject": "Matematika",
+        "Message": "Témazáró Dolgozat",
+        "Value": 5,
+        "Date": "2023-09-03T00:00:00"
+      },
+      {
+        "Subject": "Történelem",
+        "Message": "Szóbeli Felelet",
+        "Value": 3,
+        "Date": "2023-09-05T00:00:00"
+      }
+    ]
+  }
+]
