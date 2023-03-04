@@ -1,0 +1,14 @@
+﻿<Window x:Class="eCeruza.StudentClasses"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:eCeruza"
+        mc:Ignorable="d"
+        Title="StudentClasses" Height="450" Width="800">
+    <Grid>
+        <Label Content="eCeruza-Tanuló" HorizontalAlignment="Left" Margin="34,10,0,0" VerticalAlignment="Top" Height="29" Width="159" FontSize="16"/>
+        <Label x:Name="lbl_Test" Content="Label" HorizontalAlignment="Left" Margin="86,99,0,0" VerticalAlignment="Top" Height="100" Width="283"/>
+
+    </Grid>
+</Window>

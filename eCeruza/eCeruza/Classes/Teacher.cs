@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace eCeruza.Classes
 {
-    internal class Teacher
+    public class Teacher
     {
         public string? Name { get; set; }
         public string? Password { get; set; }

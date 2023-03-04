@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace eCeruza.Classes
 {
-    internal class Student
+    public class Student
     {
         public string? Name { get; set; }
         public string? Password {get; set; }
         public string? Class { get; set; }
         public List<string>? Subjects { get; set; }
-        public List<Grade>? Grades { get; set; }
+        static List<Grade>? Grades { get; set; }
     }
 }

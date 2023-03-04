@@ -19,24 +19,54 @@ using System.Windows.Shapes;
 
 namespace eCeruza
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         Dictionary<string, List<string>> subjects = new Dictionary<string, List<string>>();
-        List<Student> students = JsonSerializer.Deserialize<Student[]>(File.ReadAllText("Source/students.json")).ToList();
-        List<Teacher> teachers = JsonSerializer.Deserialize<Teacher[]>(File.ReadAllText("Source/teachers.json")).ToList();
-        
+        static List<Student> students = JsonSerializer.Deserialize<Student[]>(File.ReadAllText("Source/students.json")).ToList();
+        static List<Teacher> teachers = JsonSerializer.Deserialize<Teacher[]>(File.ReadAllText("Source/teachers.json")).ToList();
 
-        //Tanárok classSubject prop-jából ki lehet olvasni
+        #region Properties
+        public Dictionary<string, List<string>> Subjects
+        {
+            get
+            {
+                return subjects;
+            }
+            set
+            {
+                subjects = value;
+            }
+        }
+        public static List<Student> Students { 
+            get 
+            {
+                return students;
+            }
+            set 
+            {
+                students = value;
+            } 
+        }
+        public static List<Teacher> Teachers
+        {
+            get
+            {
+                return teachers;
+            }
+            set
+            {
+                teachers = value;
+            }
+        }
+        #endregion
+
         public MainWindow()
         {
-            Subjects();
+            GetSubjects();
             InitializeComponent();
         }
 
-        public void Subjects()
+        public void GetSubjects()
         {
             string className;
             string subject;
@@ -88,7 +118,8 @@ namespace eCeruza
                     if (students[index].Password == password)
                     {
                         correctPassword = true;
-                        Application.Current.MainWindow.Content = "Student_Main";
+                        StudentClasses studentClasses = new StudentClasses();
+                        Application.Current.MainWindow.Content = studentClasses.Content;
                     }
                 }
                 index++;
