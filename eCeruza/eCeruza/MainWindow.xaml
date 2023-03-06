@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:eCeruza"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowState="Maximized">
     <Grid>
         <Button x:Name="btn_Login" Content="Login" Margin="281,252,311,105" Click="btn_Login_Click"></Button>
         <TextBox x:Name="tb_Name" HorizontalAlignment="Left" Margin="202,126,0,0" TextWrapping="Wrap" Text="Név" VerticalAlignment="Top" Width="120"/>

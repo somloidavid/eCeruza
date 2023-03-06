@@ -1,9 +1,12 @@
 ﻿[
   {
     "Name": "Teszt Elek",
-    "Password":  "Test123",
+    "Password": "Test123",
     "Class": "9A",
-    "Subjects": ["Történelem","Fizika"],
+    "Subjects": [
+      "Történelem",
+      "Fizika"
+    ],
     "Grades": [
       {
         "Subject": "Matematika",
