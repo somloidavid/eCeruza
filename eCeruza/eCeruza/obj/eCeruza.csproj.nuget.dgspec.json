@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Jedlik\\11. Évfolyam\\IKT\\eCeruza\\eCeruza\\eCeruza\\eCeruza.csproj": {}
+    "Z:\\projekt\\eCeruza\\eCeruza\\eCeruza.csproj": {}
   },
   "projects": {
-    "D:\\Jedlik\\11. Évfolyam\\IKT\\eCeruza\\eCeruza\\eCeruza\\eCeruza.csproj": {
+    "Z:\\projekt\\eCeruza\\eCeruza\\eCeruza.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Jedlik\\11. Évfolyam\\IKT\\eCeruza\\eCeruza\\eCeruza\\eCeruza.csproj",
+        "projectUniqueName": "Z:\\projekt\\eCeruza\\eCeruza\\eCeruza.csproj",
         "projectName": "eCeruza",
-        "projectPath": "D:\\Jedlik\\11. Évfolyam\\IKT\\eCeruza\\eCeruza\\eCeruza\\eCeruza.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\Jedlik\\11. Évfolyam\\IKT\\eCeruza\\eCeruza\\eCeruza\\obj\\",
+        "projectPath": "Z:\\projekt\\eCeruza\\eCeruza\\eCeruza.csproj",
+        "packagesPath": "C:\\Users\\verba.viktor\\.nuget\\packages\\",
+        "outputPath": "Z:\\projekt\\eCeruza\\eCeruza\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\verba.viktor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

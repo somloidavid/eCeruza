@@ -25,15 +25,25 @@ namespace eCeruza
     public partial class MainWindow : Window
     {
         Dictionary<string, List<string>> subjects = new Dictionary<string, List<string>>();
-        List<Student> students = JsonSerializer.Deserialize<Student[]>(File.ReadAllText("Source/students.json")).ToList();
-        List<Teacher> teachers = JsonSerializer.Deserialize<Teacher[]>(File.ReadAllText("Source/teachers.json")).ToList();
-        
+        static List<Student> students = JsonSerializer.Deserialize<Student[]>(File.ReadAllText("Source/students.json")).ToList();
+        static List<Teacher> teachers = JsonSerializer.Deserialize<Teacher[]>(File.ReadAllText("Source/teachers.json")).ToList();
+        static Teacher loginName;
+        static public Teacher LoginName {
+            get
+            {
+                return loginName;
+            }
+            set 
+            {
+                loginName = value;
+            } }
 
         //Tanárok classSubject prop-jából ki lehet olvasni
         public MainWindow()
         {
             Subjects();
             InitializeComponent();
+            Application.Current.MainWindow.Content = "Teacher_Classes";
         }
 
         public void Subjects()
@@ -75,6 +85,7 @@ namespace eCeruza
                     {
                         correctPassword = true;
                         Application.Current.MainWindow.Content = "Teacher_Main";
+                        loginName = teachers[index];
                     }
                 }
                 index++;
