@@ -8,6 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="ceruzaIMG.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ceruzaIMG.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Source\Students.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

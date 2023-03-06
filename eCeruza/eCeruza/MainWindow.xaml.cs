@@ -25,8 +25,8 @@ namespace eCeruza
     public partial class MainWindow : Window
     {
         Dictionary<string, List<string>> subjects = new Dictionary<string, List<string>>();
-        List<Student> students = JsonSerializer.Deserialize<Student[]>(File.ReadAllText("Source/students.json")).ToList();
-        List<Teacher> teachers = JsonSerializer.Deserialize<Teacher[]>(File.ReadAllText("Source/teachers.json")).ToList();
+        static List<Student> students = JsonSerializer.Deserialize<Student[]>(File.ReadAllText("Source/students.json")).ToList();
+        static List<Teacher> teachers = JsonSerializer.Deserialize<Teacher[]>(File.ReadAllText("Source/teachers.json")).ToList();
         
 
         //Tanárok classSubject prop-jából ki lehet olvasni
