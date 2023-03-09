@@ -12,6 +12,7 @@ namespace eCeruza.Classes
         public string? Password {get; set; }
         public string? Class { get; set; }
         public List<string>? Subjects { get; set; }
-        static List<Grade>? Grades { get; set; }
+        public string? Language { get; set; }
+        public List<Grade>? Grades { get; set; }
     }
 }

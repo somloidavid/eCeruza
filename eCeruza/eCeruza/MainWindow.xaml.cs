@@ -64,6 +64,7 @@ namespace eCeruza
         {
             GetSubjects();
             InitializeComponent();
+            tb_Name.Text = students[0].Grades[0].Subject;
         }
 
         public void GetSubjects()

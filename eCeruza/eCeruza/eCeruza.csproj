@@ -8,6 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Generate.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Generate.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Source\Students.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
