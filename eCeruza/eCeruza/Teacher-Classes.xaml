@@ -7,24 +7,36 @@
         mc:Ignorable="d"
         Title="Teacher_Classes" Height="1024" Width="1440">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Label x:Name="lbl1" Content="Label" Grid.Column="0" Grid.Row="0" />
-        <Label x:Name="lbl2" Content="Label" Grid.Column="1" Grid.Row="0" />
-        <Label x:Name="lbl3" Content="Label" Grid.Column="2" Grid.Row="0" />
-        <Label x:Name="lbl4" Content="Label" Grid.Column="0" Grid.Row="1" />
-        <Label x:Name="lbl5" Content="Label" Grid.Column="1" Grid.Row="1" />
-        <Label x:Name="lbl6" Content="Label" Grid.Column="2" Grid.Row="1" />
-        <Label x:Name="lbl7" Content="Label" Grid.Column="0" Grid.Row="2" />
-        <Label x:Name="lbl8" Content="Label" Grid.Column="1" Grid.Row="2" />
-        <Label x:Name="lbl9" Content="Label" Grid.Column="2" Grid.Row="2" />
+        <Grid x:Name="grSubjects" Width="1280" Height="813" Margin="150,185,10,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Margin="20 10" x:Name="lbl1" Content="Label" Grid.Column="0" Grid.Row="0" Background="#FFF0C8B9" Visibility="hidden" />
+            <Label Margin="20 10" x:Name="lbl2" Content="Label" Grid.Column="1" Grid.Row="0" Background="#FFF0C8B9" Visibility="hidden" />
+            <Label Margin="20 10" x:Name="lbl3" Content="Label" Grid.Column="2" Grid.Row="0" Background="#FFF0C8B9" Visibility="hidden" />
+            <Label Margin="20 10" x:Name="lbl4" Content="Label" Grid.Column="0" Grid.Row="1" Background="#FFF0C8B9" Visibility="hidden" />
+            <Label Margin="20 10" x:Name="lbl5" Content="Label" Grid.Column="1" Grid.Row="1" Background="#FFF0C8B9" Visibility="hidden" />
+            <Label Margin="20 10" x:Name="lbl6" Content="Label" Grid.Column="2" Grid.Row="1" Background="#FFF0C8B9" Visibility="hidden" />
+            <Label Margin="20 10" x:Name="lbl7" Content="Label" Grid.Column="0" Grid.Row="2" Background="#FFF0C8B9" Visibility="hidden" />
+            <Label Margin="20 10" x:Name="lbl8" Content="Label" Grid.Column="1" Grid.Row="2" Background="#FFF0C8B9" Visibility="hidden" />
+            <Label Margin="20 10" x:Name="lbl9" Content="Label" Grid.Column="2" Grid.Row="2" Background="#FFF0C8B9" Visibility="hidden" />
+        </Grid>
+        <Label Content="Tanított osztáyok" HorizontalAlignment="Left" Margin="150,83,0,0" VerticalAlignment="Top" Height="74" Width="442" FontSize="48" FontWeight="Bold" Foreground="#FF830C0B"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="1024" VerticalAlignment="Center" Width="80" Background="Orange"/>
+        <ComboBox x:Name="cbSubject" SelectedIndex="0" HorizontalAlignment="Left" Margin="1000,115,0,0" VerticalAlignment="Top" Width="400" Height="60" FontSize="20" SelectionChanged="cbSubject_SelectionChanged">
+        </ComboBox>
+        <Button Content="Osztályok" HorizontalAlignment="Left" Margin="15,153,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FF707070" Background="#FFF0C8B9"/>
+        <Button Content="Órarend" HorizontalAlignment="Left" Margin="15,234,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FF707070" Background="#FFF0C8B9"/>
+        <Button Content="Események" HorizontalAlignment="Left" Margin="15,312,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="#FFF0C8B9" BorderBrush="#FF707070"/>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="0,0,0,916" Width="1440" HorizontalAlignment="Center" Background="#FF830C0B" Height="100" VerticalAlignment="Bottom">
+            <Label Content="Ceruza  - Tanár" Margin="9,19,1159,19" Foreground="Orange" Width="270" FontSize="36" FontWeight="Bold"/>
+        </Border>
     </Grid>
 </Window>

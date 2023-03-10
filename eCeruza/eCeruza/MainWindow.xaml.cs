@@ -43,7 +43,6 @@ namespace eCeruza
         {
             Subjects();
             InitializeComponent();
-            Application.Current.MainWindow.Content = "Teacher_Classes";
         }
 
         public void Subjects()
@@ -84,8 +83,11 @@ namespace eCeruza
                     if (teachers[index].Password == password)
                     {
                         correctPassword = true;
-                        Application.Current.MainWindow.Content = "Teacher_Main";
                         loginName = teachers[index];
+                        Teacher_Classes window = new Teacher_Classes();
+                        window.Show();
+                        this.Close();
+                        
                     }
                 }
                 index++;

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btn_Login" Content="Login" Margin="281,252,311,105" Click="btn_Login_Click"></Button>
+        <Button x:Name="btn_Login" Content="Login" Margin="281,252,311,105" Click="btn_Login_Click" />
         <TextBox x:Name="tb_Name" HorizontalAlignment="Left" Margin="202,126,0,0" TextWrapping="Wrap" Text="Név" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="tb_Password" HorizontalAlignment="Left" Margin="400,126,0,0" TextWrapping="Wrap" Text="Jelszó" VerticalAlignment="Top" Width="120"/>
     </Grid>

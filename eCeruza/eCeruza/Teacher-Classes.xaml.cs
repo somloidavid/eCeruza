@@ -29,15 +29,22 @@ namespace eCeruza
 
         private void InitializeClasses()
         {
+            HashSet<string> subjects = new HashSet<string>();
+            int lblIndex = 1;
             foreach (var item in MainWindow.LoginName.ClassSubject)
             {
-                int lblIndex = 1;
-                lblIndex++;
-                Label lblName = this.FindName($"lbl{lblIndex}") as Label;
+                Label lblName = this.FindName($"lbl{lblIndex++}") as Label;
                 lblName.Content = item;
+                lblName.Visibility = Visibility.Visible;
+                subjects.Add(item.ToString());
             }
-            
+            cbSubject.ItemsSource = subjects;
 
+        }
+
+        private void cbSubject_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
         }
     }
 }
