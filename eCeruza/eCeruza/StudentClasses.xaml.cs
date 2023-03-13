@@ -16,10 +16,10 @@ namespace eCeruza
 {
     public partial class StudentClasses : Window
     {
-        public StudentClasses()
-        {
-            InitializeComponent();
-            lbl_Test.Content = MainWindow.Students[0].Name;
-        }
+        //    public StudentClasses()
+        //    {
+        //        InitializeComponent();
+        //        lbl_Test.Content = MainWindow.Students[0].Name;
+        //    }
     }
 }

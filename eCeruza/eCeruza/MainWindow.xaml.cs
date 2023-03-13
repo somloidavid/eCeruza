@@ -25,42 +25,6 @@ namespace eCeruza
         static List<Student> students = JsonSerializer.Deserialize<Student[]>(File.ReadAllText("Source/students.json")).ToList();
         static List<Teacher> teachers = JsonSerializer.Deserialize<Teacher[]>(File.ReadAllText("Source/teachers.json")).ToList();
 
-        #region Properties
-        public Dictionary<string, List<string>> Subjects
-        {
-            get
-            {
-                return subjects;
-            }
-            set
-            {
-                subjects = value;
-            }
-        }
-        public static List<Student> Students { 
-            get 
-            {
-                return students;
-            }
-            set 
-            {
-                students = value;
-            } 
-        }
-        public static List<Teacher> Teachers
-        {
-            get
-            {
-                return teachers;
-            }
-            set
-            {
-                teachers = value;
-            }
-        }
-        #endregion
-        static List<Student> students = JsonSerializer.Deserialize<Student[]>(File.ReadAllText("Source/students.json")).ToList();
-        static List<Teacher> teachers = JsonSerializer.Deserialize<Teacher[]>(File.ReadAllText("Source/teachers.json")).ToList();
         static Teacher loginName;
         static public Teacher LoginName {
             get
@@ -72,11 +36,13 @@ namespace eCeruza
                 loginName = value;
             } }
 
+        public static object Students { get; internal set; }
+
         public MainWindow()
         {
             GetSubjects();
             InitializeComponent();
-            tb_Name.Text = students[0].Grades[0].Subject;
+            //tb_Name.Text = students[0].Grades[0].Subject;
         }
 
         public void GetSubjects()
@@ -119,9 +85,8 @@ namespace eCeruza
                         correctPassword = true;
                         loginName = teachers[index];
                         Teacher_Classes window = new Teacher_Classes();
-                        window.Show();
-                        this.Close();
-                        
+                        Application.Current.MainWindow.Content = window.Content;
+
                     }
                 }
                 index++;
