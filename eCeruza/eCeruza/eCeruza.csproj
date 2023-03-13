@@ -8,11 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="ceruzaIMG.png" />
+    <Compile Remove="Generate.cs" />
+	<Resource Include="ceruzaIMG.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="ceruzaIMG.png" />
+    <None Include="Generate.cs" />
+	<None Remove="ceruzaIMG.png" />
   </ItemGroup>
 
   <ItemGroup>

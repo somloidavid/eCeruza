@@ -21,6 +21,7 @@ D:\Jedlik\11. Évfolyam\IKT\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCe
 D:\Jedlik\11. Évfolyam\IKT\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\ref\eCeruza.dll
 D:\Jedlik\11. Évfolyam\IKT\eCeruza\eCeruza\eCeruza\bin\Debug\net6.0-windows\Source\Students.json
 D:\Jedlik\11. Évfolyam\IKT\eCeruza\eCeruza\eCeruza\bin\Debug\net6.0-windows\Source\Teachers.json
+<<<<<<< HEAD
 C:\Users\sandor.kevin\Source\Repos\eCeruza\eCeruza\eCeruza\bin\Debug\net6.0-windows\eCeruza.exe
 C:\Users\sandor.kevin\Source\Repos\eCeruza\eCeruza\eCeruza\bin\Debug\net6.0-windows\Source\Students.json
 C:\Users\sandor.kevin\Source\Repos\eCeruza\eCeruza\eCeruza\bin\Debug\net6.0-windows\Source\Teachers.json
@@ -44,6 +45,10 @@ C:\Users\sandor.kevin\Source\Repos\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-wind
 C:\Users\sandor.kevin\Source\Repos\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza.pdb
 C:\Users\sandor.kevin\Source\Repos\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza.genruntimeconfig.cache
 C:\Users\sandor.kevin\Source\Repos\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\ref\eCeruza.dll
+=======
+D:\Jedlik\11. Évfolyam\IKT\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\StudentClasses.g.cs
+D:\Jedlik\11. Évfolyam\IKT\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\StudentClasses.baml
+>>>>>>> origin/generate_student_data
 Z:\eCeruza\eCeruza\eCeruza\bin\Debug\net6.0-windows\eCeruza.exe
 Z:\eCeruza\eCeruza\eCeruza\bin\Debug\net6.0-windows\Source\Students.json
 Z:\eCeruza\eCeruza\eCeruza\bin\Debug\net6.0-windows\Source\Teachers.json
@@ -53,10 +58,18 @@ Z:\eCeruza\eCeruza\eCeruza\bin\Debug\net6.0-windows\eCeruza.dll
 Z:\eCeruza\eCeruza\eCeruza\bin\Debug\net6.0-windows\eCeruza.pdb
 Z:\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza.csproj.AssemblyReference.cache
 Z:\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\MainWindow.g.cs
+<<<<<<< HEAD
+=======
+Z:\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\StudentClasses.g.cs
+>>>>>>> origin/generate_student_data
 Z:\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\App.g.cs
 Z:\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza_MarkupCompile.cache
 Z:\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza_MarkupCompile.lref
 Z:\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\MainWindow.baml
+<<<<<<< HEAD
+=======
+Z:\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\StudentClasses.baml
+>>>>>>> origin/generate_student_data
 Z:\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza.g.resources
 Z:\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza.GeneratedMSBuildEditorConfig.editorconfig
 Z:\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza.AssemblyInfoInputs.cache
