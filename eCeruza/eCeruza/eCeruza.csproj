@@ -10,11 +10,13 @@
   <ItemGroup>
     <Compile Remove="Generate.cs" />
 	<Resource Include="ceruzaIMG.png" />
+	<Resource Include="favicon.png" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="Generate.cs" />
 	<None Remove="ceruzaIMG.png" />
+	<None Remove="favicon.png" />
   </ItemGroup>
 
   <ItemGroup>
