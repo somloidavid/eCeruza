@@ -17,6 +17,7 @@ namespace eCeruza
 {
     public partial class StudentClasses : Window
     {
+        static public string SelectedSubject { get; set; }
         public StudentClasses()
         {
             InitializeComponent();
@@ -58,6 +59,16 @@ namespace eCeruza
                 avgGrades.Add(kv.Key, Math.Round(kv.Value[0] / kv.Value[1], 2));
             }
             return avgGrades;
+        }
+
+        private void grd_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Grid grd = sender as Grid;
+            Grid containerGrid = grd.Children[0] as Grid;
+            Label subjectLabel = containerGrid.Children[0] as Label;
+            StudentClasses.SelectedSubject = subjectLabel.Content.ToString();
+            StudentGrades studentGrades = new StudentGrades();
+            Application.Current.MainWindow.Content = studentGrades.Content;
         }
     }
 }

@@ -1,0 +1,34 @@
+﻿<Window x:Class="eCeruza.StudentGrades"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:eCeruza"
+        mc:Ignorable="d"
+        Title="StudentGrades" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lbl_Subject" Content="Label" HorizontalAlignment="Left" Margin="53,26,0,0" VerticalAlignment="Top" Width="166"/>
+        <Grid Margin="53,57,400,43" Background="#FFD2D2D2">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+        </Grid>
+        <Grid x:Name="grd_Teacher" Margin="539,57,32,317" Background="#FFC3C3C3">
+            <Label Content="Tanítja:" HorizontalAlignment="Left" Margin="4,4,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
+            <Label x:Name="lbl_Teacher" Content="Label" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" Width="208"/>
+        </Grid>
+        <Grid x:Name="grd_Classrooms" Margin="539,136,32,238" Background="#FFC3C3C3">
+            <Label Content="Termek:" HorizontalAlignment="Left" Margin="4,4,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
+            <Label x:Name="lbl_Classrooms" Content="Label" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" Width="208"/>
+        </Grid>
+        <Grid x:Name="grd_Time" Margin="539,217,32,116" Background="#FFC3C3C3">
+            <Label Content="Órák:" HorizontalAlignment="Left" Margin="4,4,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
+            <Label x:Name="lbl_Time" Content="Label" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" Width="208"/>
+        </Grid>
+    </Grid>
+</Window>
