@@ -10,7 +10,7 @@ namespace eCeruza.Classes
     {
         public string? Name { get; set; }
         public string? Password { get; set; }
-        public Dictionary<string, string>? ClassSubject { get; set; }
+        public Dictionary<string, string[]>? ClassSubject { get; set; }
 
         //public Teacher(string row)
         //{

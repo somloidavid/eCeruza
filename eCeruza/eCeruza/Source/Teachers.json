@@ -1,19 +1,222 @@
 ﻿[
   {
-    "Name": "Tan Ár",
+    "Name": "Horváth Ákos",
     "Password": "kelekotya",
     "ClassSubject": {
-      "9A": "Matematika",
-      "10E": "Fizika"
+      "9A": [ "Programozás", "IKT Projektmunka" ],
+      "10C": [ "Programozás", "IKT Projektmunka" ],
+      "12A": [ "Programozás", "IKT Projektmunka" ]
     }
   },
   {
-    "Name": "Kár Oj",
+    "Name": "Varga Károly",
     "Password": "Jelszo",
     "ClassSubject": {
-      "10C": "Történelem",
-      "11B": "Történelem",
-      "9A": "Történelem"
+      "10A": [ "Programozás", "IKT Projektmunka" ],
+      "10B": [ "Programozás", "IKT Projektmunka" ],
+      "12C": [ "Programozás", "IKT Projektmunka" ]
+    }
+  },
+  {
+    "Name": "Kocsis Edina",
+    "Password": "aodHAOHF23pdj",
+    "ClassSubject": {
+      "9B": [ "Programozás", "IKT Projektmunka" ],
+      "11A": [ "Programozás", "IKT Projektmunka" ],
+      "11C": [ "Programozás", "IKT Projektmunka" ]
+    }
+  },
+  {
+    "Name": "Veres Zsolt",
+    "Password": "fiojp243ifh",
+    "ClassSubject": {
+      "9C": [ "Programozás", "IKT Projektmunka" ],
+      "11B": [ "Programozás", "IKT Projektmunka" ],
+      "12B": [ "Programozás", "IKT Projektmunka" ]
+    }
+  },
+  {
+    "Name": "Fekete Elemér",
+    "Password": "dwad43gh",
+    "ClassSubject": {
+      "9A": [ "Matematika" ],
+      "10C": [ "Matematika" ],
+      "12A": [ "Matematika" ]
+    }
+  },
+  {
+    "Name": "Szemes Ildikó",
+    "Password": "lzagieuor3",
+    "ClassSubject": {
+      "10A": [ "Matematika" ],
+      "10B": [ "Matematika" ],
+      "12C": [ "Matematika" ]
+    }
+  },
+  {
+    "Name": "Koltai Ágnes",
+    "Password": "ao2gse3pdj",
+    "ClassSubject": {
+      "9B": [ "Matematika" ],
+      "11A": [ "Matematika" ]
+    }
+  },
+  {
+    "Name": "Beles Gyöngyi",
+    "Password": "fi52jjzfh",
+    "ClassSubject": {
+      "9C": [ "Matematika" ],
+      "11B": [ "Matematika" ]
+    }
+  },
+  {
+    "Name": "Juhász László",
+    "Password": "őfkew4pgjr",
+    "ClassSubject": {
+      "10C": [ "Fizika" ],
+      "11B": [ "Fizika" ],
+      "9A": [ "Fizika" ],
+      "11C": [ "Matematika", "Fizika" ],
+      "12B": [ "Matematika", "Fizika" ]
+    }
+  },
+  {
+    "Name": "Csád Imre",
+    "Password": "főjwejf435hg",
+    "ClassSubject": {
+      "9B": [ "Fizika" ],
+      "9C": [ "Fizika" ],
+      "10B": [ "Fizika" ],
+      "10A": [ "Fizika" ],
+      "11A": [ "Fizika" ],
+      "12A": [ "Fizika" ],
+      "12C": [ "Fizika" ]
+    }
+  },
+  {
+    "Name": "Sándor Sándor",
+    "Password": "őájfp235páhn",
+    "ClassSubject": {
+      "10C": ["Történelem"],
+      "11B": ["Történelem"],
+      "9A": ["Történelem"],
+      "12A": ["Történelem"]
+    }
+  },
+  {
+    "Name": "Elek Benedek",
+    "Password": "úűfRFZI35LN",
+    "ClassSubject": {
+      "10A": [ "Történelem" ],
+      "12B": [ "Történelem" ],
+      "12C": [ "Történelem" ],
+      "9B": [ "Történelem" ]
+    }
+  },
+  {
+    "Name": "Mállik Irén",
+    "Password": "áfpHRIUG3I3",
+    "ClassSubject": {
+      "11A": [ "Történelem" ],
+      "11C": [ "Történelem" ],
+      "9C": [ "Történelem" ],
+      "10B": [ "Történelem" ]
+    }
+  },
+  {
+    "Name": "Gulyás Lilla",
+    "Password": "huioe243",
+    "ClassSubject": {
+      "10B": ["Irodalom", "Nyelvtan"],
+      "12A": ["Irodalom", "Nyelvtan"],
+      "9A": ["Irodalom", "Nyelvtan"]
+    }
+  },
+  {
+    "Name": "Bíró Lajos",
+    "Password": "g3je32",
+    "ClassSubject": {
+      "10A": ["Irodalom", "Nyelvtan"],
+      "10C": ["Irodalom", "Nyelvtan"],
+      "12C": ["Irodalom", "Nyelvtan"]
+    }
+  },
+  {
+    "Name": "Váradi Anna",
+    "Password": "j4w7q3g",
+    "ClassSubject": {
+      "11C": ["Irodalom", "Nyelvtan"],
+      "11A": ["Irodalom", "Nyelvtan"],
+      "9B": ["Irodalom", "Nyelvtan"]
+    }
+  },
+  {
+    "Name": "Hegedűs Olga",
+    "Password": "lrfqaeh3h3",
+    "ClassSubject": {
+      "9C": ["Irodalom", "Nyelvtan"],
+      "11B": ["Irodalom", "Nyelvtan"],
+      "12B": ["Irodalom", "Nyelvtan"]
+    }
+  },
+  {
+    "Name": "Bakos Mariann",
+    "Password": "g47jjgcv",
+    "ClassSubject": {
+      "10B": [ "Angol" ],
+      "12A": [ "Angol" ],
+      "9A": [ "Angol" ],
+      "10A": [ "Angol" ]
+    }
+  },
+  {
+    "Name": "Dudás Krisztián",
+    "Password": "apoágn4",
+    "ClassSubject": {
+      "10C": [ "Angol" ],
+      "12C": [ "Angol" ],
+      "9B": [ "Angol" ],
+      "11A": [ "Angol" ]
+    }
+  },
+  {
+    "Name": "Novák Előd",
+    "Password": "aátp43oiht",
+    "ClassSubject": {
+      "11B": [ "Angol" ],
+      "11C": [ "Angol" ],
+      "9C": [ "Angol" ],
+      "12B": [ "Angol" ]
+    }
+  },
+  {
+    "Name": "Nemes Attila",
+    "Password": "fpéá235n",
+    "ClassSubject": {
+      "10A": [ "Német" ],
+      "10B": [ "Német" ],
+      "9A": [ "Német" ],
+      "12A": [ "Német" ]
+    }
+  },
+  {
+    "Name": "Korsós Szilvia",
+    "Password": "jra354ag",
+    "ClassSubject": {
+      "10C": [ "Német" ],
+      "11A": [ "Német" ],
+      "9B": [ "Német" ],
+      "12C": [ "Német" ]
+    }
+  },
+  {
+    "Name": "Mezei Miklós",
+    "Password": "kd345ga",
+    "ClassSubject": {
+      "11C": [ "Német" ],
+      "11B": [ "Német" ],
+      "12B": [ "Német" ],
+      "9C": [ "Német" ]
     }
   }
 ]
