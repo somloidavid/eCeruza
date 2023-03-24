@@ -46,5 +46,16 @@ namespace eCeruza
         {
             
         }
+
+        private void btnOsztalyok_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnOrarend_Click(object sender, RoutedEventArgs e)
+        {
+            Teacher_Timetable window = new Teacher_Timetable();
+            Application.Current.MainWindow.Content = window.Content;
+        }
     }
 }
