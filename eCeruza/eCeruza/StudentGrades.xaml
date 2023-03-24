@@ -8,27 +8,36 @@
         Title="StudentGrades" Height="450" Width="800">
     <Grid>
         <Label x:Name="lbl_Subject" Content="Label" HorizontalAlignment="Left" Margin="53,26,0,0" VerticalAlignment="Top" Width="166"/>
-        <Grid Margin="53,57,400,43" Background="#FFD2D2D2">
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-        </Grid>
-        <Grid x:Name="grd_Teacher" Margin="539,57,32,317" Background="#FFC3C3C3">
-            <Label Content="Tanítja:" HorizontalAlignment="Left" Margin="4,4,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
-            <Label x:Name="lbl_Teacher" Content="Label" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" Width="208"/>
-        </Grid>
-        <Grid x:Name="grd_Classrooms" Margin="539,136,32,238" Background="#FFC3C3C3">
-            <Label Content="Termek:" HorizontalAlignment="Left" Margin="4,4,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
-            <Label x:Name="lbl_Classrooms" Content="Label" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" Width="208"/>
-        </Grid>
-        <Grid x:Name="grd_Time" Margin="539,217,32,116" Background="#FFC3C3C3">
-            <Label Content="Órák:" HorizontalAlignment="Left" Margin="4,4,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
-            <Label x:Name="lbl_Time" Content="Label" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" Width="208"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="53,58,293,23" Height="350" Width="450">
+            <Grid x:Name="grd_Grades" Background="#FFD2D2D2" Height="350" Width="450">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+            </Grid>
+        </ScrollViewer>
+        <Grid Margin="582,60,22,25">
+            <Grid x:Name="grd_Teacher"  Background="#FFC3C3C3" Margin="11,10,11,284">
+                <Label Content="Tanítja:" HorizontalAlignment="Left" Margin="4,4,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
+                <Label x:Name="lbl_Teacher" Content="Label" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Width="114"/>
+            </Grid>
+            <Grid x:Name="grd_Classrooms" Background="#FFC3C3C3" Margin="11,101,13,175">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="17*"/>
+                    <ColumnDefinition Width="11*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Termek:" HorizontalAlignment="Left" Margin="4,4,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
+                <Label x:Name="lbl_Classrooms" Content="Label" HorizontalAlignment="Left" Margin="34,30,0,0" VerticalAlignment="Top" Width="128" Grid.ColumnSpan="2"/>
+            </Grid>
+            <Grid x:Name="grd_Time" Background="#FFC3C3C3" Margin="18,222,18,32">
+                <Label Content="Órák:" HorizontalAlignment="Left" Margin="4,4,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
+                <Label x:Name="lbl_Time" Content="Label" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" Width="88"/>
+            </Grid>
         </Grid>
     </Grid>
 </Window>

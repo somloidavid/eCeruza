@@ -38,6 +38,13 @@ namespace eCeruza
                 }
             }
             lbl_Teacher.Content = teacher.Name;
+            foreach (RowDefinition rd in grd_Grades.RowDefinitions)
+            {
+                rd.Height = new GridLength(grd_Grades.Height / 6);
+            }
+            Label lb = new();
+            lb.Content = "dhoaiwd";
+            Grid.SetRow(lb, 6);
         }
     }
 }
