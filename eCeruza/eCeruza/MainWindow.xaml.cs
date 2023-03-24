@@ -28,25 +28,20 @@ namespace eCeruza
 
         #region Properties
         public static Dictionary<string, List<string>> Subjects
-        {
+        { get {return subjects;}}
+        static Teacher loginName;
+        static public Teacher LoginName {
             get
             {
-                return subjects;
-            }
-            set
-            {
-                subjects = value;
+                return loginName;
             }
         }
-        public static List<Student> Students { 
-            get 
-            {
-                return students;
-            }
-            set 
-            {
-                students = value;
-            } 
+        public static List<Student> Students
+        {
+          get
+          {
+          return students;
+          }
         }
         public static List<Teacher> Teachers
         {
@@ -67,7 +62,6 @@ namespace eCeruza
             }
         }
         #endregion
-
         public MainWindow()
         {
             GetSubjects();
@@ -129,7 +123,10 @@ namespace eCeruza
                     if (teachers[index].Password == password)
                     {
                         correctPassword = true;
-                        Application.Current.MainWindow.Content = "Teacher_Main";
+                        loginName = teachers[index];
+                        Teacher_Classes window = new Teacher_Classes();
+                        Application.Current.MainWindow.Content = window.Content;
+
                     }
                 }
                 index++;
