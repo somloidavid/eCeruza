@@ -21,47 +21,87 @@ namespace eCeruza
 {
     public partial class MainWindow : Window
     {
-        Dictionary<string, List<string>> subjects = new Dictionary<string, List<string>>();
+        static Dictionary<string, List<string>> subjects = new Dictionary<string, List<string>>();
         static List<Student> students = JsonSerializer.Deserialize<Student[]>(File.ReadAllText("Source/students.json")).ToList();
         static List<Teacher> teachers = JsonSerializer.Deserialize<Teacher[]>(File.ReadAllText("Source/teachers.json")).ToList();
+        static Student user = new Student();
 
+        #region Properties
+        public static Dictionary<string, List<string>> Subjects
+        { get {return subjects;}}
         static Teacher loginName;
         static public Teacher LoginName {
             get
             {
                 return loginName;
             }
-            set 
+        }
+        public static List<Student> Students
+        {
+          get
+          {
+          return students;
+          }
+        }
+        public static List<Teacher> Teachers
+        {
+            get
             {
-                loginName = value;
-            } }
-
-        public static object Students { get; internal set; }
-
+                return teachers;
+            }
+            set
+            {
+                teachers = value;
+            }
+        }
+        public static Student User
+        {
+            get
+            {
+                return user;
+            }
+        }
+        #endregion
         public MainWindow()
         {
             GetSubjects();
             InitializeComponent();
-            //tb_Name.Text = students[0].Grades[0].Subject;
         }
 
         public void GetSubjects()
         {
             string className;
             string subject;
+            string subject2 = "";
             foreach (Teacher teacher in teachers)
             {
-                foreach(KeyValuePair<string, string> classSubject in teacher.ClassSubject)
+                foreach(KeyValuePair<string, string[]> classSubject in teacher.ClassSubject)
                 {
                     className = classSubject.Key;
-                    subject = classSubject.Value;
-                    if (!subjects.ContainsKey(className))
+                    if (classSubject.Value.Length == 1)
+                    {
+                        subject = classSubject.Value[0];
+                    }
+                    else
+                    {
+                        subject = classSubject.Value[0];
+                        subject2 = classSubject.Value[1];
+                    }
+                    if (!subjects.ContainsKey(className) && subject2 == "")
                     {
                         subjects.Add(className, new List<string>() { subject });
                     }
-                    if(!subjects[className].Contains(subject))
+                    else if (!subjects.ContainsKey(className) && subject2 != "")
+                    {
+                        subjects.Add(className, new List<string>() { subject, subject2 });
+                    }
+                    if (!subjects[className].Contains(subject))
                     {
                         subjects[className].Add(subject);
+                    }
+                    if (!subjects[className].Contains(subject2))
+                    {
+                        subjects[className].Add(subject2);
                     }
                 }
             }
@@ -100,6 +140,7 @@ namespace eCeruza
                     if (students[index].Password == password)
                     {
                         correctPassword = true;
+                        user = students[index];
                         StudentClasses studentClasses = new StudentClasses();
                         Application.Current.MainWindow.Content = studentClasses.Content;
                     }
@@ -114,6 +155,18 @@ namespace eCeruza
             {
                 MessageBox.Show("Helytelen Jelszó!");
             }
+        }
+
+        private void tb_Name_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            textBox.Opacity = 100;
+        }
+
+        private void tb_Password_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            textBox.Opacity = 100;
         }
     }
 }
