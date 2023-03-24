@@ -34,11 +34,11 @@
         </Grid>
         <Label Content="Tanított osztáyok" HorizontalAlignment="Left" Margin="194,126,0,0" VerticalAlignment="Top" Height="74" Width="442" FontSize="48" FontWeight="Bold" Foreground="#FF830C0B"/>
         <Border BorderThickness="1" HorizontalAlignment="Left" Height="1424" VerticalAlignment="Center" Width="80" Background="Orange"/>
-        <ComboBox x:Name="cbSubject" SelectedIndex="0" HorizontalAlignment="Center" Margin="0,133,0,0" VerticalAlignment="Top" Width="400" Height="60" FontSize="20" SelectionChanged="cbSubject_SelectionChanged" Grid.Column="1">
-        </ComboBox>
-        <Button x:Name="btnOsztalyok" Content="Osztályok" HorizontalAlignment="Left" Margin="15,153,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FF707070" Background="#FFF0C8B9" Click="btnOsztalyok_Click"/>
-        <Button x:Name="btnOrarend" Content="Órarend" HorizontalAlignment="Left" Margin="15,234,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FF707070" Background="#FFF0C8B9" Click="btnOrarend_Click"/>
-        <Button x:Name="btnEsemenyek" Content="Események" HorizontalAlignment="Left" Margin="15,312,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="#FFF0C8B9" BorderBrush="#FF707070"/>
+
+        <Button Content="Osztályok" HorizontalAlignment="Left" Margin="15,153,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FF707070" Background="#FFF0C8B9"/>
+        <Button Content="Órarend" HorizontalAlignment="Left" Margin="15,234,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FF707070" Background="#FFF0C8B9"/>
+        <Button Content="Események" HorizontalAlignment="Left" Margin="15,312,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="#FFF0C8B9" BorderBrush="#FF707070"/>
+
         <Border BorderBrush="Black" BorderThickness="1" Margin="0,0,0,964" Background="#FF830C0B" Grid.ColumnSpan="2" HorizontalAlignment="Right" Width="1933" Height="100" VerticalAlignment="Bottom">
             <Label Content="Ceruza  - Tanár" Margin="79,19,1582,19" Foreground="Orange" Width="270" FontSize="36" FontWeight="Bold"/>
         </Border>

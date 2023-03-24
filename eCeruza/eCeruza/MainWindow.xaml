@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:eCeruza"
         mc:Ignorable="d"
 
-    Title="eCeruza" Height="1080" Width="1920" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/favicon.png">
+    Title="eCeruza" Height="1080" Width="1920" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/favicon.png" WindowState="Maximized" WindowStyle="None">
 
 
     <Grid>
@@ -79,7 +79,7 @@
         <Border BorderBrush="Black" BorderThickness="1" Margin="636,263,760,565" Background="White" CornerRadius="75,75,75,75"/>
         <Border BorderBrush="Black" BorderThickness="1" Margin="636.5,408,760.5,630" Background="#E5505050" CornerRadius="3,3,3,3" Height="26.04"/>
 
-        <Button x:Name="btn_Login" Content="Bejelentkezés" Margin="750,532,852,455" Click="btn_Login_Click" RenderTransformOrigin="1,0" Foreground="#FFD9D9D9" FontWeight="Bold" FontSize="18">
+        <Button x:Name="btn_Login" Content="Bejelentkezés" Margin="750,532,852,455" Click="btn_Login_Click" RenderTransformOrigin="1,0" Foreground="#FFD9D9D9" FontWeight="Bold" FontSize="18" IsDefault="True">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border CornerRadius="10"
@@ -93,8 +93,8 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <TextBox x:Name="tb_Name" HorizontalAlignment="Left" Margin="658,332,0,0" TextWrapping="Wrap" Text="Név" VerticalAlignment="Top" Width="444" Height="19" BorderThickness="0,0,0,0" FontWeight="Bold" FontSize="16" Foreground="#FF505050"/>
-        <TextBox x:Name="tb_Password" HorizontalAlignment="Left" Margin="658,388,0,0" TextWrapping="Wrap" Text="Jelszó" VerticalAlignment="Top" Width="444" Height="19" BorderThickness="0,0,0,0" FontWeight="Bold" FontSize="16" Foreground="#FF505050"/>
+        <TextBox x:Name="tb_Name" HorizontalAlignment="Left" Margin="658,332,0,0" TextWrapping="Wrap" Text="Név" VerticalAlignment="Top" Width="444" Height="19" BorderThickness="0,0,0,0" FontWeight="Bold" FontSize="16" Foreground="#FF505050" Opacity="0.5" TextChanged="tb_Name_TextChanged"/>
+        <TextBox x:Name="tb_Password" HorizontalAlignment="Left" Margin="658,388,0,0" TextWrapping="Wrap" Text="Jelszó" VerticalAlignment="Top" Width="444" Height="19" BorderThickness="0,0,0,0" FontWeight="Bold" FontSize="16" Foreground="#FF505050" TextChanged="tb_Password_TextChanged" Opacity="0.5"/>
         <Border BorderBrush="Black" BorderThickness="1" Margin="636,352,760,686" Background="#E5505050" CornerRadius="3,3,3,3"/>
     </Grid>
 </Window>

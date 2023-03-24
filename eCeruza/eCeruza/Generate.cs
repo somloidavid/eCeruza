@@ -17,7 +17,6 @@ string[] subjects = { "Történelem", "Matematika", "Fizika", "Irodalom", "Nyelv
 string[] messages = { "Témazáró Dolgozat", "Írásbeli Felelet", "Szóbeli Felelet", "Órai Munka" };
 string[] classes = { "9A", "9B", "9C", "10A", "10B", "10C", "11A", "11B", "11C", "12A", "12B", "12C", };
 string[] languages = { "Angol", "Német"};
-//string f = File.WriteAllLines("Students.json",);
 List<string> rows = new List<string>();
 foreach (string clazz in classes)
 {
