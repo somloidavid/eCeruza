@@ -5,38 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:eCeruza"
         mc:Ignorable="d"
-        Title="StudentGrades" Height="450" Width="800">
-    <Grid>
-        <Label x:Name="lbl_Subject" Content="Label" HorizontalAlignment="Left" Margin="53,26,0,0" VerticalAlignment="Top" Width="166"/>
-        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="53,58,293,23" Height="350" Width="450">
-            <Grid x:Name="grd_Grades" Background="#FFD2D2D2" Height="350" Width="450">
+        Title="StudentGrades" Height="1080" Width="1920">
+    <Grid x:Name="grd_Main">
+        <Label x:Name="lbl_Subject" Content="LABEL" Margin="80,31,1540,953" Width="1000" Height="80" FontSize="40"/>
+        <ScrollViewer Width="800" Height="900"  HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Visible" Margin="80,116,1040,48">
+            <Grid x:Name="grd_Grades" Width="800" Height="900" Background="#FF9A9A9A">
                 <Grid.RowDefinitions>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
             </Grid>
         </ScrollViewer>
-        <Grid Margin="582,60,22,25">
-            <Grid x:Name="grd_Teacher"  Background="#FFC3C3C3" Margin="11,10,11,284">
-                <Label Content="Tanítja:" HorizontalAlignment="Left" Margin="4,4,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
-                <Label x:Name="lbl_Teacher" Content="Label" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Width="114"/>
+        <Grid x:Name="Info" Margin="1240,116,80,48" Width="600" Height="900">
+            <Grid x:Name="grd_Teacher" Height="260" Margin="0,30,0,620">
+                <Label Content="Tanítja:" FontSize="40" Margin="0,0,400,170"></Label>
+                <Label x:Name="lbl_Teacher" Content="Tan Áron" FontSize="40" Margin="150,81,150,81"></Label>
             </Grid>
-            <Grid x:Name="grd_Classrooms" Background="#FFC3C3C3" Margin="11,101,13,175">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="17*"/>
-                    <ColumnDefinition Width="11*"/>
-                </Grid.ColumnDefinitions>
-                <Label Content="Termek:" HorizontalAlignment="Left" Margin="4,4,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
-                <Label x:Name="lbl_Classrooms" Content="Label" HorizontalAlignment="Left" Margin="34,30,0,0" VerticalAlignment="Top" Width="128" Grid.ColumnSpan="2"/>
+            <Grid x:Name="grd_Teacher_Copy" Height="260" Margin="0,320,0,330">
+                <Label Content="Termek:" FontSize="40" Margin="0, 0, 400, 170"></Label>
             </Grid>
-            <Grid x:Name="grd_Time" Background="#FFC3C3C3" Margin="18,222,18,32">
-                <Label Content="Órák:" HorizontalAlignment="Left" Margin="4,4,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
-                <Label x:Name="lbl_Time" Content="Label" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" Width="88"/>
+            <Grid x:Name="grd_Teacher_Copy1" Height="260" Margin="0,580,0,0">
+                <Label Content="Órák:" FontSize="40" Margin="0, 0, 400, 170"></Label>
             </Grid>
         </Grid>
     </Grid>
