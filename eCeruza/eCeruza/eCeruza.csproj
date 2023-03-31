@@ -8,6 +8,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="favicon.png" />
+    <None Remove="key-icon.png" />
+    <None Remove="loginBGofflogo.png" />
+    <None Remove="user-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="favicon.png" />
+    <Resource Include="key-icon.png" />
+    <Resource Include="loginBGofflogo.png" />
+    <Resource Include="user-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Source\Students.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
