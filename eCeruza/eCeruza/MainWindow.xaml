@@ -11,7 +11,6 @@
         WindowStartupLocation="CenterScreen"
         Background="Transparent"
         AllowsTransparency="True" Icon="/favicon.png"
-        IsEnabled="True"
         MouseDown="Window_MouseDown">
     <Border CornerRadius="12">
         <Border.Background>
@@ -64,10 +63,10 @@
                             Click="btnMinimize_Click">
                         <Button.Style>
                             <Style TargetType="Button">
-                                <Setter Property="Background" Value="#28AEED"/>
+                                <Setter Property="Background" Value="#603601"/>
                                 <Style.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#278BEF"/>
+                                        <Setter Property="Background" Value="#FF4E2C01"/>
                                     </Trigger>
                                 </Style.Triggers>
                             </Style>
@@ -94,10 +93,10 @@
                             Click="btnClose_Click">
                         <Button.Style>
                             <Style TargetType="Button">
-                                <Setter Property="Background" Value="#DA34AE"/>
+                                <Setter Property="Background" Value="#FF441A03"/>
                                 <Style.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#C62DAE"/>
+                                        <Setter Property="Background" Value="#FF381602"/>
                                     </Trigger>
                                 </Style.Triggers>
                             </Style>
@@ -197,7 +196,8 @@
                             FontFamily="Montserrat"
                             Cursor="Hand"                           
                             Margin="0,50,0,0"
-                            Click="btn_Login_Click">
+                            Click="btn_Login_Click"
+                            IsDefault="True">
                         <Button.Style>
                             <Style TargetType="Button">
                                 <Setter Property="Background" Value="#FFD6AB00"/>
