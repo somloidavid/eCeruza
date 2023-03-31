@@ -20,15 +20,13 @@ namespace eCeruza
         static public string SelectedSubject { get; set; }
         static private SortedList<string, double> classAvg = new();
         static public SortedList<string, double> ClassAvg { get { return classAvg; } }
-    static public Dictionary<string, double> avgGrades { get; set; }
-        static public List<string> allSubjects { get; set; }
+        static public Dictionary<string, double> avgGrades { get; set; }
+        public CornerRadius CornerRadius { get; set; }
+
         public StudentClasses()
         {
             InitializeComponent();
-            allSubjects = MainWindow.User.Subjects;
-            allSubjects.Add(MainWindow.User.Language);
             avgGrades = Average();
-            allSubjects.Sort();
             FillContent();
         }
 
@@ -57,8 +55,8 @@ namespace eCeruza
         private void grd_MouseDown(object sender, MouseButtonEventArgs e)
         {
             Grid grd = sender as Grid;
-            Grid containerGrid = grd.Children[0] as Grid;
-            Label subjectLabel = containerGrid.Children[0] as Label;
+            Grid gridu = grd.Children[0] as Grid;
+            Label subjectLabel = gridu.Children[0] as Label;
             StudentClasses.SelectedSubject = subjectLabel.Content.ToString();
             StudentGrades studentGrades = new StudentGrades();
             Application.Current.MainWindow.Content = studentGrades.Content;
@@ -97,16 +95,16 @@ namespace eCeruza
         {
             for (int i = 0; i < 8; i++)
             {
-                CalculateClassAvg(allSubjects[i]);
+                CalculateClassAvg(MainWindow.AllSubjects[i]);
                 Grid grd = new Grid();
                 Label lbl_Subject = new Label();
-                lbl_Subject.Content = allSubjects[i];
+                lbl_Subject.Content = MainWindow.AllSubjects[i];
                 Label lbl_Avg = new Label();
                 lbl_Avg.Margin = new Thickness(200, 0, 0, 0);
-                lbl_Avg.Content = avgGrades[allSubjects[i]];
+                lbl_Avg.Content = avgGrades[MainWindow.AllSubjects[i]];
                 Label lbl_ClassAvg = new Label();
                 lbl_ClassAvg.Margin = new Thickness(250, 0, 0, 0);
-                lbl_ClassAvg.Content = ClassAvg[allSubjects[i]];
+                lbl_ClassAvg.Content = ClassAvg[MainWindow.AllSubjects[i]];
                 grd.Children.Add(lbl_Subject);
                 grd.Children.Add(lbl_Avg);
                 grd.Children.Add(lbl_ClassAvg);

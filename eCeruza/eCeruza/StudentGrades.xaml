@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="StudentGrades" Height="1080" Width="1920">
     <Grid x:Name="grd_Main">
-        <Label x:Name="lbl_Subject" Content="LABEL" Margin="80,31,1540,953" Width="1000" Height="80" FontSize="40"/>
-        <ScrollViewer Width="800" Height="900"  HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Visible" Margin="80,116,1040,48">
-            <Grid x:Name="grd_Grades" Width="800" Height="900" Background="#FF9A9A9A">
+        <Label x:Name="lbl_Subject" Content="LABEL" Margin="180,86,740,898" Width="1000" Height="80" FontSize="40"/>
+        <ScrollViewer Width="800" Height="850"  HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Visible" Margin="180,166,940,48">
+            <Grid x:Name="grd_Grades" Width="800" Height="850" Background="#FF9A9A9A">
                 <Grid.RowDefinitions>
                 </Grid.RowDefinitions>
             </Grid>
@@ -26,5 +26,6 @@
                 <Label Content="Órák:" FontSize="40" Margin="0, 0, 400, 170"></Label>
             </Grid>
         </Grid>
+        <Button x:Name="btn_Classes" Content="Tantárgyak" HorizontalAlignment="Left" Margin="10,126,0,0" VerticalAlignment="Top" Height="60" Width="80" Click="btn_Classes_Click"/>
     </Grid>
 </Window>

@@ -80,5 +80,11 @@ namespace eCeruza
                 griddy.Children.Add(lbl_Date);
             }
         }
+
+        private void btn_Classes_Click(object sender, RoutedEventArgs e)
+        {
+            StudentClasses studentClasses = new StudentClasses();
+            Application.Current.MainWindow.Content = studentClasses.Content;
+        }
     }
 }

@@ -5,10 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:eCeruza"
         mc:Ignorable="d"
-        Title="StudentClasses" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None">
+        Title="StudentClasses" Height="1080" Width="1920" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None">
     <Grid Margin="0, 0,0,0">
-        <Label Content="eCeruza-Tanuló" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="29" Width="159" FontSize="16"/>
-        <Grid x:Name="grd_Container" Margin="89,39,76,15">
+        <Grid x:Name="grd_Vertical" Width="106" Margin="0,0,1814,0" Background="#FFA500">
+            <Button x:Name="button_TimeTable" Content="" HorizontalAlignment="Center" Height="60" Margin="0,118,0,0" VerticalAlignment="Top" Width="66"/>
+            <Button x:Name="button_Logout" Content="" HorizontalAlignment="Center" Height="60" Margin="0,195,0,0" VerticalAlignment="Top" Width="66"/>
+            <Button x:Name="button_logoutClose" Content="" HorizontalAlignment="Center" Height="60" Margin="0,272,0,0" VerticalAlignment="Top" Width="66"/>
+        </Grid>
+        <Grid x:Name="grd_Horizontal" Height="100" Margin="0,0,0,980" Background="#FF830C0B">
+            <Label Content="eCeruza-Tanuló" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="80" Width="300" FontSize="40" VerticalContentAlignment="Center" Foreground="Orange" FontWeight="DemiBold"/>
+        </Grid>
+        <Grid x:Name="grd_Container" Margin="160,250,55,82" Width="1705" Height="745">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
@@ -19,14 +26,31 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <Grid x:Name="grd_0" Margin="0,10,10,10" Background="#FFD4D4D4" MouseDown="grd_MouseDown"/>
-            <Grid x:Name="grd_1" Grid.Column="1" Margin="10,10,0,10" Background="#FFD4D4D4" MouseDown="grd_MouseDown"/>
-            <Grid x:Name="grd_2" Grid.Row="1" Margin="0,10,10,10" Background="#FFD4D4D4" MouseDown="grd_MouseDown"/>
-            <Grid x:Name="grd_3" Grid.Column="1" Grid.Row="1" Margin="10,10,0,10" Background="#FFD4D4D4" MouseDown="grd_MouseDown"></Grid>
-            <Grid x:Name="grd_4" Grid.Row="2" Margin="0,10,10,10" Background="#FFD4D4D4" MouseDown="grd_MouseDown"/>
-            <Grid x:Name="grd_5" Grid.Column="1" Grid.Row="2" Margin="10,10,0,10" Background="#FFD4D4D4" MouseDown="grd_MouseDown"></Grid>
-            <Grid x:Name="grd_6" Grid.Row="3" Margin="0,10,10,10" Background="#FFD4D4D4" MouseDown="grd_MouseDown"/>
-            <Grid x:Name="grd_7" Grid.Column="1" Grid.Row="3" Margin="10,10,0,10" Background="#FFD4D4D4" MouseDown="grd_MouseDown"></Grid>
+            <Grid x:Name="grd_0" Margin="0,10,10,10" MouseDown="grd_MouseDown" Height="120" Width="750">
+                <Border BorderThickness="2" CornerRadius="30" Background="#FFD4D4D4"/>
+            </Grid>
+            <Grid x:Name="grd_1" Grid.Column="1" Margin="10,10,0,10" MouseDown="grd_MouseDown" Height="120" Width="750">
+                <Border BorderThickness="2" CornerRadius="30" Background="#FFD4D4D4"/>
+            </Grid>
+            <Grid x:Name="grd_2" Grid.Row="1" Margin="0,10,10,10" MouseDown="grd_MouseDown" Height="120" Width="750">
+                <Border BorderThickness="2" CornerRadius="30" Background="#FFD4D4D4"/>
+            </Grid>
+            <Grid x:Name="grd_3" Grid.Column="1" Grid.Row="1" Margin="10,10,0,10" MouseDown="grd_MouseDown" Height="120" Width="750">
+                <Border BorderThickness="2" CornerRadius="30" Background="#FFD4D4D4"/>
+            </Grid>
+            <Grid x:Name="grd_4" Grid.Row="2" Margin="0,10,10,10" MouseDown="grd_MouseDown" Height="120" Width="750">
+                <Border BorderThickness="2" CornerRadius="30" Background="#FFD4D4D4"/>
+            </Grid>
+            <Grid x:Name="grd_5" Grid.Column="1" Grid.Row="2" Margin="10,10,0,10" MouseDown="grd_MouseDown" Height="120" Width="750">
+                <Border BorderThickness="2" CornerRadius="30" Background="#FFD4D4D4"/>
+            </Grid>
+            <Grid x:Name="grd_6" Grid.Row="3" Margin="0,10,10,10" MouseDown="grd_MouseDown" Height="120" Width="750">
+                <Border BorderThickness="2" CornerRadius="30" Background="#FFD4D4D4"/>
+            </Grid>
+            <Grid x:Name="grd_7" Grid.Column="1" Grid.Row="3" Margin="10,10,0,10" MouseDown="grd_MouseDown" Height="120" Width="750">
+                <Border BorderThickness="2" CornerRadius="30" Background="#FFD4D4D4"/>
+            </Grid>
         </Grid>
+        <Label x:Name="lbl_Subject" Content="Tantárgyak" HorizontalAlignment="Left" Margin="200,133,0,0" VerticalAlignment="Top" Height="85" Width="280" FontSize="50" Foreground="#FF830C0B" FontWeight="Bold"/>
     </Grid>
 </Window>

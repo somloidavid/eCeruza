@@ -25,8 +25,16 @@ namespace eCeruza
         static List<Student> students = JsonSerializer.Deserialize<Student[]>(File.ReadAllText("Source/students.json")).ToList();
         static List<Teacher> teachers = JsonSerializer.Deserialize<Teacher[]>(File.ReadAllText("Source/teachers.json")).ToList();
         static Student user = new Student();
+        static List<string> allSubjects { get; set; }
 
         #region Properties
+        public static List<string> AllSubjects 
+        { 
+            get
+            {
+                return allSubjects;
+            }
+        }
         public static Dictionary<string, List<string>> Subjects
         {
             get
@@ -144,6 +152,9 @@ namespace eCeruza
                     {
                         correctPassword = true;
                         user = students[index];
+                        allSubjects = User.Subjects;
+                        allSubjects.Add(User.Language);
+                        allSubjects.Sort();
                         StudentClasses studentClasses = new StudentClasses();
                         Application.Current.MainWindow.Content = studentClasses.Content;
                     }
