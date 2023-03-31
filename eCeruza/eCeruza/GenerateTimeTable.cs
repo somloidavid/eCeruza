@@ -21,10 +21,7 @@ foreach(string c in classes)
     {
         for (int i = 1; i <= 6; i++)
         {
-            foreach (var s in teachers)
-            {
-                rows.Add(s.ToString());
-            }
+            
             Random random = new Random();
             string row = "{";
             row += $"\"Nap\":\"{d}\"";
