@@ -55,7 +55,7 @@ namespace eCeruza
         private void grd_MouseDown(object sender, MouseButtonEventArgs e)
         {
             Grid grd = sender as Grid;
-            Grid gridu = grd.Children[0] as Grid;
+            Grid gridu = grd.Children[1] as Grid;
             Label subjectLabel = gridu.Children[0] as Label;
             StudentClasses.SelectedSubject = subjectLabel.Content.ToString();
             StudentGrades studentGrades = new StudentGrades();
