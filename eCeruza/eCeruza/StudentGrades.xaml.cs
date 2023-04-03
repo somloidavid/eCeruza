@@ -50,6 +50,9 @@ namespace eCeruza
             for (int i = 0; i < gradesInSubject.Count; i++)
             {
                 RowDefinition rd = new();
+                BrushConverter bc = new();
+                Brush yellow = (Brush)bc.ConvertFrom("#FFA500");
+                yellow.Freeze();
                 rd.Height = new GridLength(150);
                 grd_Grades.RowDefinitions.Add(rd);
                 Grid griddy = new();
@@ -61,6 +64,12 @@ namespace eCeruza
                 Label lbl_Value = new();
                 Label lbl_Message = new();
                 Label lbl_Date = new();
+                lbl_Value.Foreground = yellow;
+                lbl_Message.Foreground = yellow;
+                lbl_Date.Foreground = yellow;
+                lbl_Value.FontSize = 30;
+                lbl_Message.FontSize = 30;
+                lbl_Date.FontSize = 30;
                 lbl_Value.Content = gradesInSubject[i].Value;
                 lbl_Message.Content = gradesInSubject[i].Message;
                 lbl_Date.Content = gradesInSubject[i].Date;

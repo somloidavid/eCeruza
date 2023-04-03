@@ -95,16 +95,28 @@ namespace eCeruza
         {
             for (int i = 0; i < 8; i++)
             {
+                BrushConverter bc = new();
+                Brush yellow = (Brush)bc.ConvertFrom("#FFA500");
+                yellow.Freeze();
                 CalculateClassAvg(MainWindow.AllSubjects[i]);
                 Grid grd = new Grid();
                 Label lbl_Subject = new Label();
                 lbl_Subject.Content = MainWindow.AllSubjects[i];
                 Label lbl_Avg = new Label();
-                lbl_Avg.Margin = new Thickness(200, 0, 0, 0);
+                lbl_Avg.Margin = new Thickness(400, 0, 0, 0);
                 lbl_Avg.Content = avgGrades[MainWindow.AllSubjects[i]];
                 Label lbl_ClassAvg = new Label();
-                lbl_ClassAvg.Margin = new Thickness(250, 0, 0, 0);
+                lbl_ClassAvg.Margin = new Thickness(500, 0, 0, 0);
                 lbl_ClassAvg.Content = ClassAvg[MainWindow.AllSubjects[i]];
+                lbl_Subject.Foreground = yellow;
+                lbl_Avg.Foreground = yellow;
+                lbl_ClassAvg.Foreground = yellow;
+                lbl_Subject.FontSize = 32;
+                lbl_Avg.FontSize = 32;
+                lbl_Subject.VerticalAlignment = VerticalAlignment.Center;
+                lbl_Avg.VerticalAlignment = VerticalAlignment.Center;
+                lbl_ClassAvg.VerticalAlignment = VerticalAlignment.Center;
+                lbl_ClassAvg.FontSize = 32;
                 grd.Children.Add(lbl_Subject);
                 grd.Children.Add(lbl_Avg);
                 grd.Children.Add(lbl_ClassAvg);
