@@ -8,7 +8,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-List<Teacher> teachers = JsonSerializer.Deserialize<Teacher[]>(File.ReadAllText("Source/teachers.json")).ToList();
+List<Teacher> teachers = JsonSerializer.Deserialize<Teacher[]>(File.ReadAllText("Source/TimeTable.json")).ToList();
 string[] days = { "Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek" };
 string[] subjects = { "Történelem", "Matematika", "Fizika", "Irodalom", "Nyelvtan", "Programozás", "IKT Projektmunka" };
 string[] classes = { "9A", "9B", "9C", "10A", "10B", "10C", "11A", "11B", "11C", "12A", "12B", "12C", };

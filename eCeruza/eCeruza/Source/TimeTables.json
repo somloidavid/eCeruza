@@ -1,183 +1,44 @@
 [
   {
-    "Osztály": "9A",
     "Hétfő": {
-      "1": [ "IdegenNyelv", "13" ],
-      "2": [ "IdegenNyelv", "13" ],
-      "3": [ "Matematika", "13", "Fekete Ekemér" ],
-      "4": [ "Fizika", "13", "Juhász László" ],
-      "5": [ "Programozás", "115", "Horváth Ákos" ],
-      "6": [ "Programozás", "115", "Horváth Ákos" ]
+      "1": "IdegenNyelv",
+      "2": "IdegenNyelv",
+      "3": "Matematika",
+      "4": "Fizika",
+      "5": "Programozás",
+      "6": "Programozás"
     },
     "Kedd": {
-      "1": [ "IKT Projektmunka", "115", "Horváth Ákos" ],
-      "2": [ "IKT Projektmunka", "115", "Horváth Ákos" ],
-      "3": [ "Történelem", "13", "Sándor Sándor" ],
-      "4": [ "Irodalom", "13", "Gulyás Lilla" ],
-      "5": [ "Nyelvtan", "13", "Gulyás Lilla" ],
-      "6": [ "IdegenNyelv", "13" ]
+      "1": "IKT Projektmunka",
+      "2": "IKT Projektmunka",
+      "3": "Történelem",
+      "4": "Irodalom",
+      "5": "Nyelvtan",
+      "6": "IdegenNyelv"
     },
     "Szerda": {
-      "1": [ "Programozás", "115", "Horváth Ákos" ],
-      "2": [ "Programozás", "115", "Horváth Ákos" ],
-      "3": [ "Irodalom", "13", "Gulyás Lilla" ],
-      "4": [ "Történelem", "13", "Sándor Sándor" ],
-      "5": [ "IdegenNyelv", "13" ],
-      "6": [ "Nyelvtan", "13", "Gulyás Lilla" ]
+      "1": "Programozás",
+      "2": "Programozás",
+      "3": "Irodalom",
+      "4": "Történelem",
+      "5": "IdegenNyelv",
+      "6": "Nyelvtan"
     },
     "Csütörtök": {
-      "1": [ "Matematika", "13", "Fekete Ekemér" ],
-      "2": [ "Matematika", "13", "Fekete Ekemér" ],
-      "4": [ "Irodalom", "13", "Gulyás Lilla" ],
-      "3": [ "Történelem", "13", "Sándor Sándor" ],
-      "5": [ "Programozás", "115", "Horváth Ákos" ],
-      "6": [ "Programozás", "115", "Horváth Ákos" ]
+      "1": "Matematika",
+      "2": "Matematika",
+      "4": "Irodalom",
+      "3": "Történelem",
+      "5": "Programozás",
+      "6": "Programozás"
     },
     "Péntek": {
-      "1": [ "IdegenNyelv", "13" ],
-      "2": [ "IdegenNyelv", "13" ],
-      "3": [ "Programozás", "115", "Horváth Ákos" ],
-      "4": [ "Programozás", "115", "Horváth Ákos" ],
-      "5": [ "IKT Projektmunka", "115", "Horváth Ákos" ],
-      "6": [ "IKT Projektmunka", "115", "Horváth Ákos" ]
-    }
-  },
-
-
-  {
-    "Osztály": "9B",
-    "Hétfő": {
-      "1": [ "IdegenNyelv", "15" ],
-      "2": [ "IdegenNyelv", "15" ],
-      "3": [ "Matematika", "15", "Koltai Ágnes" ],
-      "4": [ "Fizika", "15", "Csád Imre" ],
-      "5": [ "Programozás", "116", "Kocsis Edina" ],
-      "6": [ "Programozás", "116", "Kocsis Edina" ]
-    },
-    "Kedd": {
-      "1": [ "IKT Projektmunka", "116", "Kocsis Edina" ],
-      "2": [ "IKT Projektmunka", "116", "Kocsis Edina" ],
-      "3": [ "Történelem", "15", "Elek Benedek" ],
-      "4": [ "Irodalom", "15", "Váradi Anna" ],
-      "5": [ "Nyelvtan", "15", "Váradi Anna" ],
-      "6": [ "IdegenNyelv", "15" ]
-    },
-    "Szerda": {
-      "1": [ "Programozás", "116", "Kocsis Edina" ],
-      "2": [ "Programozás", "116", "Kocsis Edina" ],
-      "3": [ "Irodalom", "15", "Váradi Anna" ],
-      "4": [ "Történelem", "15", "Elek Benedek" ],
-      "5": [ "IdegenNyelv", "15" ],
-      "6": [ "Nyelvtan", "15", "Váradi Anna" ]
-    },
-    "Csütörtök": {
-      "1": [ "Matematika", "15", "Koltai Ágnes" ],
-      "2": [ "Matematika", "15", "Koltai Ágnes" ],
-      "3": [ "Irodalom", "15", "Váradi Anna" ],
-      "4": [ "Történelem", "15", "Elek Benedek" ],
-      "5": [ "Programozás", "116", "Kocsis Edina" ],
-      "6": [ "Programozás", "116", "Kocsis Edina" ]
-    },
-    "Péntek": {
-      "1": [ "IdegenNyelv", "15" ],
-      "2": [ "IdegenNyelv", "15" ],
-      "3": [ "Programozás", "116", "Kocsis Edina" ],
-      "4": [ "Programozás", "116", "Kocsis Edina" ],
-      "5": [ "IKT Projektmunka", "116", "Kocsis Edina" ],
-      "6": [ "IKT Projektmunka", "116", "Kocsis Edina" ]
-    }
-  },
-
-
-
-
-  {
-    "Osztály": "9C",
-    "Hétfő": {
-      "1": [ "IdegenNyelv", "101" ],
-      "2": [ "IdegenNyelv", "101" ],
-      "3": [ "Fizika", "101", "Csád Imre" ],
-      "4": [ "Matematika", "101", "Beles Gyöngyi" ],
-      "5": [ "Programozás", "117", "Veres Zsolt" ],
-      "6": [ "Programozás", "117", "Veres Zsolt" ]
-    },
-    "Kedd": {
-      "1": [ "IKT Projektmunka", "117", "Veres Zsolt" ],
-      "2": [ "IKT Projektmunka", "117", "Veres Zsolt" ],
-      "3": [ "Történelem", "101", "Mállik Irén" ],
-      "4": [ "Irodalom", "101", "Hegedűs Olga" ],
-      "5": [ "Nyelvtan", "101", "Hegedűs Olga" ],
-      "6": [ "IdegenNyelv", "101" ]
-    },
-    "Szerda": {
-      "1": [ "Programozás", "117", "Veres Zsolt" ],
-      "2": [ "Programozás", "117", "Veres Zsolt" ],
-      "3": [ "Irodalom", "101", "Hegedűs Olga" ],
-      "4": [ "Történelem", "101", "Mállik Irén" ],
-      "5": [ "IdegenNyelv", "101" ],
-      "6": [ "Nyelvtan", "101", "Hegedűs Olga" ]
-    },
-    "Csütörtök": {
-      "1": [ "Matematika", "101", "Beles Gyöngyi" ],
-      "2": [ "Matematika", "101", "Beles Gyöngyi" ],
-      "3": [ "Irodalom", "101", "Hegedűs Olga" ],
-      "4": [ "Történelem", "101", "Mállik Irén" ],
-      "5": [ "Programozás", "117", "Veres Zsolt" ],
-      "6": [ "Programozás", "117", "Veres Zsolt" ]
-    },
-    "Péntek": {
-      "1": [ "IdegenNyelv", "101" ],
-      "2": [ "IdegenNyelv", "101" ],
-      "3": [ "Programozás", "117", "Veres Zsolt" ],
-      "4": [ "Programozás", "117", "Veres Zsolt" ],
-      "5": [ "IKT Projektmunka", "117", "Veres Zsolt" ],
-      "6": [ "IKT Projektmunka", "117", "Veres Zsolt" ]
-    }
-  },
-
-
-  {
-    "Osztály": "10A",
-    "Hétfő": {
-      "1": [ "Fizika", "101", "Csád Imre" ],
-      "2": [ "Matematika", "101", "Szemes Ildikó" ],
-      "3": [ "Programozás", "116", "Varga Károly" ],
-      "4": [ "Programozás", "116", "Varga Károly" ],
-      "5": [ "IdegenNyelv", "101" ],
-      "6": [ "IdegenNyelv", "101" ]
-    },
-    "Kedd": {
-      "1": [ "IKT Projektmunka", "116", "Varga Károly" ],
-      "2": [ "IKT Projektmunka", "116", "Varga Károly" ],
-      "3": [ "Irodalom", "101", "Bíró Lajos" ],
-      "4": [ "Történelem", "101", "Elek Benedek" ],
-      "5": [ "IdegenNyelv", "101" ],
-      "6": [ "Nyelvtan", "101", "Bíró Lajos" ]
-    },
-    "Szerda": {
-      "1": [ "Programozás", "116", "Varga Károly" ],
-      "2": [ "Programozás", "116", "Varga Károly" ],
-      "3": [ "Történelem", "101", "Elek Benedek" ],
-      "4": [ "IdegenNyelv", "15" ],
-      "5": [ "Irodalom", "101", "Bíró Lajos" ],
-      "6": [ "Nyelvtan", "15", "Bíró Lajos" ]
-    },
-    "Csütörtök": {
-      "1": [ "Matematika", "15", "Szemes Ildikó" ],
-      "2": [ "Matematika", "15", "Szemes Ildikó" ],
-      "3": [ "Történelem", "15", "Elek Benedek" ],
-      "4": [ "Irodalom", "15", "Bíró Lajos" ],
-      "5": [ "Programozás", "116", "Varga Károly" ],
-      "6": [ "Programozás", "116", "Varga Károly" ]
-    },
-    "Péntek": {
-      "1": [ "Programozás", "116", "Varga Károly" ],
-      "2": [ "Programozás", "116", "Varga Károly" ],
-      "3": [ "IdegenNyelv", "15" ],
-      "4": [ "IdegenNyelv", "15" ],
-      "5": [ "IKT Projektmunka", "116", "Varga Károly" ],
-      "6": [ "IKT Projektmunka", "116", "Varga Károly" ]
+      "1": "IdegenNyelv",
+      "2": "IdegenNyelv",
+      "3": "Programozás",
+      "4": "Programozás",
+      "5": "IKT Projektmunka",
+      "6": "IKT Projektmunka"
     }
   }
-
 ]
