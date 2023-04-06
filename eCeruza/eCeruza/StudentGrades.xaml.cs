@@ -47,46 +47,71 @@ namespace eCeruza
                 }
             }
             lbl_Teacher.Content = teacher.Name;
+            BrushConverter bc = new();
+            #region Colors
+                Brush yellow = (Brush)bc.ConvertFrom("#FFA500");
+                Brush grey = (Brush)bc.ConvertFrom("#FFD4D4D4");
+                yellow.Freeze();
+                grey.Freeze();
+                #endregion
             for (int i = 0; i < gradesInSubject.Count; i++)
             {
+                #region Initialize
                 RowDefinition rd = new();
-                BrushConverter bc = new();
-                Brush yellow = (Brush)bc.ConvertFrom("#FFA500");
-                yellow.Freeze();
                 rd.Height = new GridLength(150);
-                grd_Grades.RowDefinitions.Add(rd);
-                Grid griddy = new();
-                griddy.Width = 800;
-                griddy.Height = 900 / 6;
-                griddy.Width = 800;
-                grd_Grades.Children.Add(griddy);
-                Grid.SetRow(griddy, i);
+                Grid grd_Grade = new();
                 Label lbl_Value = new();
                 Label lbl_Message = new();
                 Label lbl_Date = new();
+                Border border = new Border();
+                #endregion
+                #region GradeStyle
+                grd_Grade.Height = 120;
+                grd_Grade.Width = 700;
+                grd_Grade.Margin = new Thickness(0, 20, 0, 0);
+                border.CornerRadius = new CornerRadius(30);
+                border.Background = grey;
+                #endregion
+                #region LabelStyle
+                #region FontColor
                 lbl_Value.Foreground = yellow;
                 lbl_Message.Foreground = yellow;
                 lbl_Date.Foreground = yellow;
-                lbl_Value.FontSize = 30;
-                lbl_Message.FontSize = 30;
-                lbl_Date.FontSize = 30;
-                lbl_Value.Content = gradesInSubject[i].Value;
-                lbl_Message.Content = gradesInSubject[i].Message;
-                lbl_Date.Content = gradesInSubject[i].Date;
-                lbl_Value.Width = 50;
-                lbl_Message.Width = 300;
-                lbl_Date.Width = 400;
-                lbl_Value.Height = 900 / 6;
-                lbl_Message.Height = 900 / 6;
-                lbl_Date.Height = 900 / 6;
-                lbl_Value.Margin = new Thickness(0, 0, 750, 0);
-                lbl_Date.Margin = new Thickness(600, 0, 0, 0);
+                #endregion
+                #region FontSize
                 lbl_Value.FontSize = 34;
                 lbl_Message.FontSize = 34;
                 lbl_Date.FontSize = 34;
-                griddy.Children.Add(lbl_Value);
-                griddy.Children.Add(lbl_Message);
-                griddy.Children.Add(lbl_Date);
+                #endregion
+                #region Content
+                lbl_Value.Content = gradesInSubject[i].Value;
+                lbl_Message.Content = gradesInSubject[i].Message;
+                lbl_Date.Content = gradesInSubject[i].Date;
+                #endregion
+                #region Width
+                lbl_Value.Width = 50;
+                lbl_Message.Width = 300;
+                lbl_Date.Width = 400;
+                #endregion
+                #region Height
+                lbl_Value.Height = 120;
+                lbl_Message.Height = 120;
+                lbl_Date.Height = 120;
+                #endregion
+                #region Margin
+                lbl_Value.Margin = new Thickness(0, 0, 500, 0);
+                lbl_Date.Margin = new Thickness(500, 0, 0, 0);
+                #endregion
+                #endregion
+                #region Add
+                grd_Grade.Children.Add(border);
+                grd_Grade.Children.Add(lbl_Value);
+                grd_Grade.Children.Add(lbl_Message);
+                grd_Grade.Children.Add(lbl_Date);
+                grd_Grades.RowDefinitions.Add(rd);
+                Grid.SetRow(grd_Grade, i);
+                grd_Grades.Children.Add(grd_Grade);
+                #endregion
             }
         }
 
