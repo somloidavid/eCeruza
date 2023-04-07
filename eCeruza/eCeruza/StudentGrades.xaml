@@ -35,5 +35,6 @@
         <Grid x:Name="grd_Horizontal" Margin="0,0,0,980" Width="1920" Background="#FF830C0B" Height="100">
             <Label Content="eCeruza-Tanuló" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="80" Width="300" FontSize="40" VerticalContentAlignment="Center" Foreground="Orange" FontWeight="DemiBold"/>
         </Grid>
+        <Button Content="+" HorizontalAlignment="Left" Margin="1005,910,0,0" VerticalAlignment="Top" Height="121" Width="144" Click="Button_Click"/>
     </Grid>
 </Window>

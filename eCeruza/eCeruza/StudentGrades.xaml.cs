@@ -15,8 +15,14 @@ using System.Windows.Shapes;
 
 namespace eCeruza
 {
+
     public partial class StudentGrades : Window
     {
+        #region Colors
+        static BrushConverter bc = new();
+        public static Brush yellow = (Brush)bc.ConvertFrom("#FFA500");
+        public static Brush grey = (Brush)bc.ConvertFrom("#FFD4D4D4");
+        #endregion
         public List<Grade> gradesInSubject = new();
         public StudentGrades()
         {
@@ -47,13 +53,7 @@ namespace eCeruza
                 }
             }
             lbl_Teacher.Content = teacher.Name;
-            BrushConverter bc = new();
-            #region Colors
-                Brush yellow = (Brush)bc.ConvertFrom("#FFA500");
-                Brush grey = (Brush)bc.ConvertFrom("#FFD4D4D4");
-                yellow.Freeze();
-                grey.Freeze();
-                #endregion
+            
             for (int i = 0; i < gradesInSubject.Count; i++)
             {
                 #region Initialize
@@ -119,6 +119,14 @@ namespace eCeruza
         {
             StudentClasses studentClasses = new StudentClasses();
             Application.Current.MainWindow.Content = studentClasses.Content;
+        }
+
+        
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            GhostGrade gg = new();
+            gg.Show();
         }
     }
 }
