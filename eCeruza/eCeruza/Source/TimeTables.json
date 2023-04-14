@@ -1,0 +1,44 @@
+[
+  {
+    "Hétfő": {
+      "1": "IdegenNyelv",
+      "2": "IdegenNyelv",
+      "3": "Matematika",
+      "4": "Fizika",
+      "5": "Programozás",
+      "6": "Programozás"
+    },
+    "Kedd": {
+      "1": "IKT Projektmunka",
+      "2": "IKT Projektmunka",
+      "3": "Történelem",
+      "4": "Irodalom",
+      "5": "Nyelvtan",
+      "6": "IdegenNyelv"
+    },
+    "Szerda": {
+      "1": "Programozás",
+      "2": "Programozás",
+      "3": "Irodalom",
+      "4": "Történelem",
+      "5": "IdegenNyelv",
+      "6": "Nyelvtan"
+    },
+    "Csütörtök": {
+      "1": "Matematika",
+      "2": "Matematika",
+      "4": "Irodalom",
+      "3": "Történelem",
+      "5": "Programozás",
+      "6": "Programozás"
+    },
+    "Péntek": {
+      "1": "IdegenNyelv",
+      "2": "IdegenNyelv",
+      "3": "Programozás",
+      "4": "Programozás",
+      "5": "IKT Projektmunka",
+      "6": "IKT Projektmunka"
+    }
+  }
+]

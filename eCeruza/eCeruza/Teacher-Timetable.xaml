@@ -24,7 +24,7 @@
         </Grid>
 
 
-        <Grid x:Name="TimeTable" Width="1287" Height="622" Margin="494,442,139,0" Background="Black">
+        <Grid x:Name="TimeTable" Width="1287" Height="622" Margin="494,442,139,0" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
