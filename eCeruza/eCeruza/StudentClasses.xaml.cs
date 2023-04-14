@@ -124,5 +124,11 @@ namespace eCeruza
                 grid.Children.Add(grd);
             }
         }
+
+        private void button_TimeTable_Click(object sender, RoutedEventArgs e)
+        {
+            Students_Timetable w = new Students_Timetable();
+            Application.Current.MainWindow.Content = w.Content;
+        }
     }
 }
