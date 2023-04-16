@@ -47,11 +47,11 @@ namespace eCeruza
 
         }
 
-        //private object LB_Click()
-        //{
-        //    TeacherClass w = new TeacherClass();
-        //    Application.Current.MainWindow.Content = w.Content;
-        //}
+        private void LB_Click(object sender, RoutedEventArgs e)
+        {
+            TeacherClass w = new TeacherClass();
+            Application.Current.MainWindow.Content = w.Content;
+        }
 
         private void button_TimeTable_Click(object sender, RoutedEventArgs e)
         {
