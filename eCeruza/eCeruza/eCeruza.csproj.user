@@ -1,25 +1,37 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
   <ItemGroup>
-    <ApplicationDefinition Update="App.xaml">
-      <SubType>Designer</SubType>
-    </ApplicationDefinition>
+    <Compile Remove="Generate.cs" />
+    <None Remove="key-icon.png" />
+    <None Remove="loginBGofflogo.png" />
+    <None Remove="user-icon.png" />
+	<Resource Include="ceruzaIMG.png" />
+	<Resource Include="favicon.png" />
+	<Resource Include="key-icon.png">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</Resource>
+	<Resource Include="loginBGofflogo.png">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</Resource>
+	<Resource Include="user-icon.png">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</Resource>
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Update="StudentClasses.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Students-Timetable.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <None Update="Source\Students.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Source\Teachers.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
-  <ItemGroup>
-    <Page Update="MainWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Students-Timetable.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-  </ItemGroup>
+
 </Project>
