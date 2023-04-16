@@ -57,5 +57,6 @@ namespace eCeruza
             Teacher_Timetable window = new Teacher_Timetable();
             Application.Current.MainWindow.Content = window.Content;
         }
+
     }
 }

@@ -44,6 +44,14 @@ namespace eCeruza
                 return loginName;
             }
         }
+        static Student SloginName;
+        static public Student SLoginName
+        {
+            get
+            {
+                return SloginName;
+            }
+        }
         public static List<Student> Students
         {
           get
@@ -148,6 +156,7 @@ namespace eCeruza
                     {
                         correctPassword = true;
                         user = students[index];
+                        SloginName = students[index];
                         allSubjects = User.Subjects;
                         allSubjects.Add(User.Language);
                         allSubjects.Sort();
