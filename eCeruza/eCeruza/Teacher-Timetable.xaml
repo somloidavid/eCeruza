@@ -7,44 +7,7 @@
         mc:Ignorable="d"
         Title="eCeruza" Height="1080" Width="1920" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/favicon.png">
     <Grid>
-        <Border  Background="#FF830C0B" Margin="416,292,142,654" />
-        <Grid Height="90" Width="1287" RenderTransformOrigin="0.512,0.617" Margin="494,382,139,592">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Label HorizontalContentAlignment="Center" Content="Hétfő" Grid.Column="0" Grid.Row="0" FontSize="36" FontWeight="Bold" Background="Orange" />
-            <Label HorizontalContentAlignment="Center" Content="Kedd" Grid.Column="1" Grid.Row="0" FontSize="36" FontWeight="Bold" Background="Orange" />
-            <Label HorizontalContentAlignment="Center" Content="Szerda" Grid.Column="2" Grid.Row="0" FontSize="36" FontWeight="Bold" Background="Orange" />
-            <Label HorizontalContentAlignment="Center" Content="Csütörtök" Grid.Column="3" Grid.Row="0" FontSize="36" FontWeight="Bold" Background="Orange" />
-            <Label HorizontalContentAlignment="Center" Content="Péntek" Grid.Column="4" Grid.Row="0" FontSize="36" FontWeight="Bold" Background="Orange" />
-        </Grid>
-
-
-        <Grid x:Name="TimeTable" Width="1287" Height="622" Margin="494,442,139,0" >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-
-            </Grid.RowDefinitions>
-
-        </Grid>
+        
         <Border BorderThickness="1" HorizontalAlignment="Left" Height="1424" VerticalAlignment="Center" Width="80" Background="Orange"/>
         <Border BorderBrush="Black" BorderThickness="1" Margin="0,0,0,964" Background="#FF830C0B" HorizontalAlignment="Right" Width="1933" Height="100" VerticalAlignment="Bottom">
             <Label Content="Ceruza  - Tanár" Margin="79,19,1582,19" Foreground="Orange" Width="270" FontSize="36" FontWeight="Bold"/>
@@ -53,29 +16,78 @@
         <Button Content="Órarend" HorizontalAlignment="Left" Margin="15,234,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FF707070" Background="#FFF0C8B9"/>
         <Button Content="Események" HorizontalAlignment="Left" Margin="15,312,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="#FFF0C8B9" BorderBrush="#FF707070"/>
 
-        <Border BorderThickness="1" HorizontalAlignment="Left" Height="687" VerticalAlignment="Top" Width="80" Background="#FF60080A" Margin="416,377,0,0"/>
-        <Grid Height="622" Width="75" Margin="419,437,1426,5">
+
+      
+        <Grid Margin="162,164,49,24" x:Name="TimeTable">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Label HorizontalContentAlignment="Center" Content="0" Grid.Column="0" Grid.Row="0" FontSize="36" FontWeight="Bold" Background="#FF60080A" Foreground="White" />
-            <Label HorizontalContentAlignment="Center" Content="1" Grid.Column="1" Grid.Row="1" FontSize="36" FontWeight="Bold" Background="#FF60080A" Foreground="White"/>
-            <Label HorizontalContentAlignment="Center" Content="2" Grid.Column="2" Grid.Row="2" FontSize="36" FontWeight="Bold" Background="#FF60080A" Foreground="White"/>
-            <Label HorizontalContentAlignment="Center" Content="3" Grid.Column="3" Grid.Row="3" FontSize="36" FontWeight="Bold" Background="#FF60080A" Foreground="White"/>
-            <Label HorizontalContentAlignment="Center" Content="4" Grid.Column="4" Grid.Row="4" FontSize="36" FontWeight="Bold" Background="#FF60080A" Foreground="White"/>
-            <Label HorizontalContentAlignment="Center" Content="5" Grid.Column="5" Grid.Row="5" FontSize="36" FontWeight="Bold" Background="#FF60080A" Foreground="White"/>
-            <Label HorizontalContentAlignment="Center" Content="6" Grid.Column="6" Grid.Row="6" FontSize="36" FontWeight="Bold" Background="#FF60080A" Foreground="White"/>
-            <Label HorizontalContentAlignment="Center" Content="7" Grid.Column="7" Grid.Row="7" FontSize="36" FontWeight="Bold" Background="#FF60080A" Foreground="White"/>
-        </Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.4*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Label Grid.Column="1" HorizontalContentAlignment="Center" Content="Hétfő"  Grid.Row="1" FontSize="36" FontWeight="Bold" Background="Orange"/>
+            <Label Grid.Column="2" HorizontalContentAlignment="Center" Content="Kedd"  Grid.Row="1" FontSize="36" FontWeight="Bold" Background="Orange"/>
+            <Label Grid.Column="3" HorizontalContentAlignment="Center" Content="Szerda"  Grid.Row="1" FontSize="36" FontWeight="Bold" Background="Orange"/>
+            <Label Grid.Column="4" HorizontalContentAlignment="Center" Content="Csütörtök"  Grid.Row="1" FontSize="36" FontWeight="Bold" Background="Orange"/>
+            <Label Grid.Column="5" HorizontalContentAlignment="Center" Content="Péntek"  Grid.Row="1" FontSize="36" FontWeight="Bold" Background="Orange"/>
 
+            <Label Content=""  Grid.Row="1" FontSize="52" HorizontalContentAlignment="Center" FontWeight="Bold" Background="#FF60080A" Foreground="White"/>
+            <Label Content="1"  Grid.Row="2" FontSize="52" HorizontalContentAlignment="Center" FontWeight="Bold" Background="#FF60080A" Foreground="White"/>
+            <Label Content="2"  Grid.Row="3" FontSize="52" HorizontalContentAlignment="Center" FontWeight="Bold" Background="#FF60080A" Foreground="White"/>
+            <Label Content="3"  Grid.Row="4" FontSize="52" HorizontalContentAlignment="Center" FontWeight="Bold" Background="#FF60080A" Foreground="White"/>
+            <Label Content="4"  Grid.Row="5" FontSize="52" HorizontalContentAlignment="Center" FontWeight="Bold" Background="#FF60080A" Foreground="White"/>
+            <Label Content="5"  Grid.Row="6" FontSize="52" HorizontalContentAlignment="Center" FontWeight="Bold" Background="#FF60080A" Foreground="White" />
+            <Label Content="6"  Grid.Row="7" FontSize="52" HorizontalContentAlignment="Center" FontWeight="Bold" Background="#FF60080A" Foreground="White"/>
+
+            <Label x:Name="lblWeek" Grid.ColumnSpan="6" Grid.Row="0" Background="#FF830C0B" />
+
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Border BorderBrush="Black" BorderThickness="2"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="2">
+                <Border BorderBrush="Black" BorderThickness="2"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="3">
+                <Border BorderBrush="Black" BorderThickness="2"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="4">
+                <Border BorderBrush="Black" BorderThickness="2"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="5">
+                <Border BorderBrush="Black" BorderThickness="2"/>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="0">
+                <Border BorderBrush="Black" BorderThickness="2"/>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="0">
+                <Border BorderBrush="Black" BorderThickness="2"/>
+            </Grid>
+            <Grid Grid.Row="4" Grid.Column="0">
+                <Border BorderBrush="Black" BorderThickness="2"/>
+            </Grid>
+            <Grid Grid.Row="5" Grid.Column="0">
+                <Border BorderBrush="Black" BorderThickness="2"/>
+            </Grid>
+            <Grid Grid.Row="6" Grid.Column="0">
+                <Border BorderBrush="Black" BorderThickness="2"/>
+            </Grid>
+            <Border BorderBrush="Black" BorderThickness="2" Grid.ColumnSpan="6" Grid.RowSpan="8"/>
+
+        </Grid>
+   
 
     </Grid>
 </Window>

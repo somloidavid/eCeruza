@@ -34,9 +34,13 @@ namespace eCeruza
             foreach (var item in MainWindow.LoginName.ClassSubject)
             {
                 Label lblName = this.FindName($"lbl{lblIndex++}") as Label;
-                lblName.Content = item;
+                lblName.Content = item.Key;
+                lblName.FontSize = 52;
+                lblName.HorizontalContentAlignment = HorizontalAlignment.Center;
+                lblName.VerticalContentAlignment = VerticalAlignment.Center;
+                //lblName.HorizontalAlignment = HorizontalAlignment.Center;
+                //lblName.VerticalAlignment = VerticalAlignment.Center;
                 lblName.Visibility = Visibility.Visible;
-                
             }
             
 
