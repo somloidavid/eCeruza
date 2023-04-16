@@ -35,7 +35,15 @@ namespace eCeruza
             {
                 for (int j = 0; j < 6; j++)
                 {
-                    
+                    Grid grid = new Grid();
+                    Border border = new Border();
+                    border.BorderBrush = Brushes.Black;
+                    border.BorderThickness = new Thickness(2);
+                    Grid.SetRow(grid, j+2);
+                    Grid.SetColumn(grid, i+1);
+                    grid.Children.Add(border);
+                    TimeTable.Children.Add(grid);
+
                      foreach(var item2 in MainWindow.LoginName.ClassSubject.Values)
                      {
                         if (item2.Contains(Orarend[i,j]))
@@ -43,12 +51,11 @@ namespace eCeruza
                             Label l = new Label();
                             l.VerticalAlignment = VerticalAlignment.Center;
                             l.HorizontalAlignment = HorizontalAlignment.Center;
-                            l.FontSize = 25;
-                            l.BorderBrush = Brushes.Black;
+                            l.FontSize = 35;
                             l.Content = Orarend[i, j];
-                            Grid.SetRow(l, j + 1);
-                            Grid.SetColumn(l, i);
-                            TimeTable.Children.Add(l);
+                            //Grid.SetRow(l, j + 2);
+                            //Grid.SetColumn(l, i+1);
+                            grid.Children.Add(l);
                         }
                      }
                    
@@ -56,6 +63,23 @@ namespace eCeruza
                        
                 }
             }
+            DayOfWeek currentDay = DateTime.Now.DayOfWeek;
+            int daysTillCurrentDay = currentDay - DayOfWeek.Monday;
+            DateTime currentWeekStartDate = DateTime.Now.AddDays(-daysTillCurrentDay);
+            DateTime weekEnd = currentWeekStartDate.AddDays(+6);
+            lblWeek.FontSize = 52;
+            lblWeek.HorizontalContentAlignment = HorizontalAlignment.Center;
+            lblWeek.VerticalContentAlignment = VerticalAlignment.Center;
+            lblWeek.Foreground = Brushes.White;
+            lblWeek.Content = $"{currentWeekStartDate.ToString("yyyy,MM,dd").Replace(',','.')}-{weekEnd.ToString("yyyy,MM,dd").Replace(',', '.')}";
+
+                for (int i = 0; i <= 6; i++)
+                {
+                    for (int j = 0; j <= 9; j++)
+                    {
+
+                    }
+                }
         }
     }
 }
