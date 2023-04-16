@@ -1,12 +1,12 @@
-﻿<Window x:Class="eCeruza.Teacher_Timetable"
+﻿<Window x:Class="eCeruza.Students_Timetable"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:eCeruza"
         mc:Ignorable="d"
-        Title="eCeruza" Height="1080" Width="1920" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/favicon.png">
-    <Grid Background="White">
+       Title="eCeruza" Height="1080" Width="1920" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/favicon.png">
+    <Grid>
         <Border  Background="#FF830C0B" Margin="416,292,142,654" />
         <Grid Height="90" Width="1287" RenderTransformOrigin="0.512,0.617" Margin="494,382,139,592">
             <Grid.ColumnDefinitions>
@@ -47,7 +47,7 @@
         </Grid>
         <Border BorderThickness="1" HorizontalAlignment="Left" Height="1424" VerticalAlignment="Center" Width="80" Background="Orange"/>
         <Border BorderBrush="Black" BorderThickness="1" Margin="0,0,0,964" Background="#FF830C0B" HorizontalAlignment="Right" Width="1933" Height="100" VerticalAlignment="Bottom">
-            <Label Content="Ceruza  - Tanár" Margin="79,19,1582,19" Foreground="Orange" Width="270" FontSize="36" FontWeight="Bold"/>
+            <Label Content="Ceruza  - Diák" Margin="79,19,1582,19" Foreground="Orange" Width="270" FontSize="36" FontWeight="Bold"/>
         </Border>
         <Button Content="Osztályok" HorizontalAlignment="Left" Margin="15,153,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FF707070" Background="#FFF0C8B9"/>
         <Button Content="Órarend" HorizontalAlignment="Left" Margin="15,234,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FF707070" Background="#FFF0C8B9"/>
