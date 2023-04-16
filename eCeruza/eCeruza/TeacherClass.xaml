@@ -5,15 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:eCeruza"
         mc:Ignorable="d"
-        Title="TeacherClass" Height="1080" Width="1920">
+        Title="TeacherClass" Height="1080" Width="1920" >
     <Grid Margin="0, 0,0,0" Background="White">
         <Grid x:Name="grd_Vertical" Width="106" Margin="0,0,1814,0" Background="#FFA500">
-            <Button x:Name="button_TimeTable" Content="" HorizontalAlignment="Center" Height="60" Margin="0,118,0,0" VerticalAlignment="Top" Width="66" Cursor="Hand"/>
-            <Button x:Name="button_Logout" Content="" HorizontalAlignment="Center" Height="60" Margin="0,195,0,0" VerticalAlignment="Top" Width="66" Cursor="Hand"/>
-            <Button x:Name="button_logoutClose" Content="" HorizontalAlignment="Center" Height="60" Margin="0,272,0,0" VerticalAlignment="Top" Width="66" Cursor="Hand"/>
+            <Grid Height="60" Width="60" Margin="0,-760,0,0">
+                <Border CornerRadius="10" Background="#33830C0B"/>
+                <Label MouseDown="button_TimeTable_Click" x:Name="button_TimeTable" Content="" HorizontalAlignment="Center" Height="60" VerticalAlignment="Top" Width="60" Cursor="Hand" BorderBrush="{x:Null}">
+                    <Label.Background>
+                        <ImageBrush ImageSource="/timetable.png"/>
+                    </Label.Background>
+                </Label>
+            </Grid>
+            <Grid Height="60" Width="60" Margin="0,-613,0,0">
+                <Border CornerRadius="10" Background="#33830C0B"/>
+                <Label MouseDown="button_Logout_MouseDown" x:Name="button_Logout" Content="" HorizontalAlignment="Center" Height="60" VerticalAlignment="Top" Width="60" Cursor="Hand" BorderBrush="{x:Null}">
+                    <Label.Background>
+
+                        <ImageBrush ImageSource="/Source/img/logout.png"/>
+
+                    </Label.Background>
+                </Label>
+            </Grid>
+            <Grid Height="60" Width="60" Margin="0,-466,0,0">
+                <Border CornerRadius="10" Background="#33830C0B"/>
+                <Label MouseDown="button_logoutClose_MouseDown" x:Name="button_logoutClose" Content="" HorizontalAlignment="Center" Height="60" VerticalAlignment="Top" Width="60" Cursor="Hand" BorderBrush="{x:Null}">
+                    <Label.Background>
+                        <ImageBrush ImageSource="/close.png"/>
+                    </Label.Background>
+                </Label>
+            </Grid>
         </Grid>
         <Grid x:Name="grd_Horizontal" Height="100" Margin="0,0,0,980" Background="#FF830C0B">
-            <Label Content="eCeruza-Tanuló" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="80" Width="300" FontSize="40" VerticalContentAlignment="Center" Foreground="Orange" FontWeight="DemiBold"/>
+            <Label Content="eCeruza-Tanár" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="80" Width="300" FontSize="40" VerticalContentAlignment="Center" Foreground="Orange" FontWeight="DemiBold"/>
         </Grid>
         <Label x:Name="lbl_Subject" Content="Tantárgyak" HorizontalAlignment="Left" Margin="200,133,0,0" VerticalAlignment="Top" Height="85" Width="280" FontSize="50" Foreground="#FF830C0B" FontWeight="Bold"/>
         <Grid Margin="200,223,82,68">

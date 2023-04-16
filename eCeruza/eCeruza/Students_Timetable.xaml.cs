@@ -19,6 +19,22 @@ namespace eCeruza
     /// </summary>
     public partial class Students_Timetable : Window
     {
+        private void button_TimeTable_Click(object sender, MouseButtonEventArgs e)
+        {
+            Teacher_Classes w = new Teacher_Classes();
+            Application.Current.MainWindow.Content = w.Content;
+        }
+
+        private void button_Logout_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MainWindow w = new MainWindow();
+            Application.Current.MainWindow.Content = w.Content;
+        }
+        private void button_logoutClose_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
         string[,] Orarend = new string[,]{
             {"Idegennyelv","Idegennyelv","Matematika","Fizika","Programozás","Programozás" },
             {"IKT Projektmunka","IKT Projektmunka","Történelem","Irodalom","Nyelvtan","Idegennyelv"},

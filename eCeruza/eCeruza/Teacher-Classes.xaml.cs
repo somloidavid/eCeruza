@@ -33,6 +33,7 @@ namespace eCeruza
             int lblIndex = 1;
             foreach (var item in MainWindow.LoginName.ClassSubject)
             {
+             
                 Label lblName = this.FindName($"lbl{lblIndex++}") as Label;
                 lblName.Content = item.Key;
                 lblName.FontSize = 52;
@@ -46,10 +47,12 @@ namespace eCeruza
 
         }
 
-        
-        
+        //private object LB_Click()
+        //{
+        //    TeacherClass w = new TeacherClass();
+        //    Application.Current.MainWindow.Content = w.Content;
+        //}
 
-        
         private void button_TimeTable_Click(object sender, RoutedEventArgs e)
         {
             Teacher_Timetable w = new Teacher_Timetable();

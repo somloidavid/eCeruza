@@ -28,9 +28,27 @@ namespace eCeruza
             {"Programozás","Programozás","Irodalom","Történelem","Idegennyelv","Nyelvtan" },
             {"Matematika","Matematika","Irodalom","Történelem","Programozás","Programozás" },
             {"Idegennyelv","Idegennyelv","Programozás","Programozás","IKT Projektmunka","IKT Projektmunka"}};
+        private void button_TimeTable_Click(object sender, MouseButtonEventArgs e)
+        {
+            Teacher_Classes w = new Teacher_Classes();
+            Application.Current.MainWindow.Content = w.Content;
+        }
+        
+        private void button_Logout_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            StudentGrades.button_Logout_Click(sender, e);
+        }
+        private void button_logoutClose_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
         public Teacher_Timetable()
         {
             InitializeComponent();
+
+            
+
+
             for (int i = 0; i < 5; i++)
             {
                 for (int j = 0; j < 6; j++)
