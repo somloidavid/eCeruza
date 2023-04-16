@@ -134,6 +134,9 @@ namespace eCeruza
         private void button_Logout_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mw = new();
+            Application.Current.MainWindow.WindowState = WindowState.Normal;
+            Application.Current.MainWindow.Height = 550;
+            Application.Current.MainWindow.Width = 800;
             Application.Current.MainWindow.Content = mw.Content; 
         }
 
