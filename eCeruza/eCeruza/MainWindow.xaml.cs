@@ -134,7 +134,6 @@ namespace eCeruza
                         loginName = teachers[index];
                         Teacher_Classes window = new Teacher_Classes();
                         Application.Current.MainWindow.Content = window.Content;
-
                     }
                 }
                 index++;
@@ -152,6 +151,8 @@ namespace eCeruza
                         allSubjects = User.Subjects;
                         allSubjects.Add(User.Language);
                         allSubjects.Sort();
+                        List<Grade> SortedList = User.Grades.OrderBy(o => o.Date).ToList();
+                        User.Grades = SortedList;
                         StudentClasses studentClasses = new StudentClasses();
                         Application.Current.MainWindow.Content = studentClasses.Content;
                     }
