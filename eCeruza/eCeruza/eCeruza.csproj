@@ -8,10 +8,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="classes.png" />
+    <None Remove="close.png" />
+    <None Remove="logout.png" />
+    <None Remove="Source\img\classes.png" />
+    <None Remove="Source\img\close.png" />
+    <None Remove="Source\img\logout.png" />
+    <None Remove="timetable.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="Generate.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
 	  <None Include="ceruzaIMG.png" />
+	  <Resource Include="classes.png" />
+	  <Resource Include="close.png" />
 	  <Resource Include="favicon.png" />
     <Resource Include="key-icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -19,6 +31,17 @@
     <Resource Include="loginBGofflogo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="logout.png" />
+    <Resource Include="Source\img\classes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\img\close.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\img\logout.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="timetable.png" />
     <Resource Include="user-icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
