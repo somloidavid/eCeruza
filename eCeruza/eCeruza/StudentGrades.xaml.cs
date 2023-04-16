@@ -22,8 +22,10 @@ namespace eCeruza
         static BrushConverter bc = new();
         public static Brush yellow = (Brush)bc.ConvertFrom("#FFA500");
         public static Brush grey = (Brush)bc.ConvertFrom("#FFD4D4D4");
+        public static Brush brown = (Brush)bc.ConvertFrom("#830C0B");
         #endregion
-        public List<Grade> gradesInSubject = new();
+        static public List<Grade> gradesInSubject = new();
+        static public GhostGrade GG;
         public StudentGrades()
         {
             foreach (Grade grade in MainWindow.User.Grades)
@@ -70,7 +72,7 @@ namespace eCeruza
                 grd_Grade.Width = 700;
                 grd_Grade.Margin = new Thickness(0, 20, 0, 0);
                 border.CornerRadius = new CornerRadius(30);
-                border.Background = grey;
+                border.Background = brown;
                 #endregion
                 #region LabelStyle
                 #region FontColor
@@ -125,8 +127,19 @@ namespace eCeruza
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            GhostGrade gg = new();
-            gg.Show();
+            GG = new GhostGrade();
+            GG.Show();
+        }
+
+        private void button_Logout_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mw = new();
+            Application.Current.MainWindow.Content = mw.Content; 
+        }
+
+        private void button_logoutClose_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

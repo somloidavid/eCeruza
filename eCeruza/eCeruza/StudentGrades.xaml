@@ -6,8 +6,9 @@
         xmlns:local="clr-namespace:eCeruza"
         mc:Ignorable="d"
         Title="StudentGrades" Height="1080" Width="1920" WindowStyle="None">
+
     <Grid x:Name="grd_Main" Height="1080">
-        <Label x:Name="lbl_Subject" Content="LABEL" Margin="180,101,740,899" Width="1000" FontSize="40"/>
+        <Label x:Name="lbl_Subject" Content="LABEL" Margin="180,101,740,899" Width="1000" FontSize="40" Foreground="#830C0B" FontWeight="Bold"/>
         <ScrollViewer Width="800" Height="850"  HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Visible" Margin="180,180,940,48">
             <Grid x:Name="grd_Grades" Width="800" Height="850">
                 <Grid.RowDefinitions>
@@ -16,25 +17,32 @@
         </ScrollViewer>
         <Grid x:Name="Info" Margin="1240,116,80,48" Width="600" Height="900">
             <Grid x:Name="grd_Teacher" Height="260" Margin="0,30,0,620">
-                <Label Content="Tanítja:" FontSize="40" Margin="0,0,400,170"></Label>
-                <Label x:Name="lbl_Teacher" Content="Tan Áron" FontSize="40" Margin="150,81,150,81"></Label>
+                <Border CornerRadius="60" BorderThickness="2" Background="#FF830C0B" Margin="55,5,55,10"></Border>
+                <Label Content="Tanítja:" FontSize="46" Margin="224,15,224,155" Foreground="Orange"/>
+                <Label x:Name="lbl_Teacher" Content="Tan Áron" FontSize="46" Margin="82,105,82,79" Foreground="Orange" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></Label>
             </Grid>
             <Grid x:Name="grd_Teacher_Copy" Height="260" Margin="0,320,0,330">
-                <Label Content="Termek:" FontSize="40" Margin="0, 0, 400, 170"></Label>
+                <Border CornerRadius="60" BorderThickness="2" Background="#FF830C0B" Margin="55,5,55,10"></Border>
+                <Label Content="Termek:" FontSize="46" Margin="200,10,200,160" Foreground="Orange" HorizontalContentAlignment="Center"></Label>
             </Grid>
             <Grid x:Name="grd_Teacher_Copy1" Height="260" Margin="0,580,0,0">
-                <Label Content="Órák:" FontSize="40" Margin="0, 0, 400, 170"></Label>
+                <Border CornerRadius="60" BorderThickness="2" Background="#FF830C0B" Margin="55,5,55,10"></Border>
+                <Label Content="Órák:" FontSize="46" Margin="200,10,200,160" Foreground="Orange" HorizontalContentAlignment="Center"></Label>
             </Grid>
         </Grid>
         <Grid x:Name="grd_Vertical" Width="106" Margin="0,0,1814,0" Background="#FFA500" Height="1080">
-            <Button x:Name="button_Classes" Content="" HorizontalAlignment="Center" Height="60" Margin="0,120,0,0" VerticalAlignment="Top" Width="66"  Click="btn_Classes_Click"/>
-            <Button x:Name="button_TimeTable" Content="" HorizontalAlignment="Center" Height="60" Margin="0,197,0,0" VerticalAlignment="Top" Width="66"/>
-            <Button x:Name="button_Logout" Content="" HorizontalAlignment="Center" Height="60" Margin="0,274,0,0" VerticalAlignment="Top" Width="66"/>
-            <Button x:Name="button_logoutClose" Content="" HorizontalAlignment="Center" Height="60" Margin="0,351,0,0" VerticalAlignment="Top" Width="66"/>
+            <Button x:Name="button_Classes" Content="" HorizontalAlignment="Center" Height="60" Margin="0,120,0,0" VerticalAlignment="Top" Width="66"  Click="btn_Classes_Click" Cursor="Hand"/>
+            <Button x:Name="button_TimeTable" Content="" HorizontalAlignment="Center" Height="60" Margin="0,197,0,0" VerticalAlignment="Top" Width="66" Cursor="Hand"/>
+            <Button x:Name="button_Logout" Content="" HorizontalAlignment="Center" Height="60" Margin="0,274,0,0" VerticalAlignment="Top" Width="66" Click="button_Logout_Click" Cursor="Hand"/>
+            <Button x:Name="button_logoutClose" Content="" HorizontalAlignment="Center" Height="60" Margin="0,351,0,0" VerticalAlignment="Top" Width="66" Click="button_logoutClose_Click" Cursor="Hand"/>
         </Grid>
         <Grid x:Name="grd_Horizontal" Margin="0,0,0,980" Width="1920" Background="#FF830C0B" Height="100">
             <Label Content="eCeruza-Tanuló" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="80" Width="300" FontSize="40" VerticalContentAlignment="Center" Foreground="Orange" FontWeight="DemiBold"/>
         </Grid>
-        <Button Content="+" HorizontalAlignment="Left" Margin="1005,910,0,0" VerticalAlignment="Top" Height="121" Width="144" Click="Button_Click"/>
+        <Grid>
+            <Border CornerRadius="10" Background="#FF830C0B"  Height="120" Width="120" Margin="1005,910,795,50">
+                <Label Content="+" HorizontalAlignment="Center" VerticalAlignment="Top" Height="110" Width="120" MouseDown="Button_Click" Cursor="Hand" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="50" FontWeight="Bold" Foreground="Orange"/>
+            </Border>
+        </Grid>
     </Grid>
 </Window>
