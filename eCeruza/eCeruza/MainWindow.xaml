@@ -170,7 +170,7 @@
                                FontWeight="Medium"
                                FontFamily="Montserrat"                             
                                Margin="0,15,0,0"/>
-                    <TextBox x:Name="tb_Password"
+                    <PasswordBox x:Name="pb_Password"
                              FontSize="13"
                              FontWeight="Medium"
                              FontFamily="Montserrat"                            
@@ -182,44 +182,62 @@
                              VerticalContentAlignment="Center"
                              Margin="0,5,0,0"
                              Padding="20,0,0,0">
-                        <TextBox.Background>
+                        <PasswordBox.Background>
                             <ImageBrush ImageSource="/key-icon.png"
                                         Stretch="None"
                                         AlignmentX="Left"/>
-                        </TextBox.Background>
-                    </TextBox>
-                    <Button x:Name="btnLogin"                          
+                        </PasswordBox.Background>
+                    </PasswordBox>
+                </StackPanel>
+                <CheckBox x:Name="cbShowPass" Content="Jelszó megjelenítése" Foreground="LightGray" Margin="288,243,288,258" Grid.Row="1" Checked="cbShowPass_Checked" Unchecked="cbShowPass_Unchecked" IsChecked="False"/>
+                <TextBox x:Name="tb_Password"
+                        FontSize="13"
+                        FontWeight="Medium"
+                        FontFamily="Montserrat"                            
+                        Foreground="MintCream"
+                        CaretBrush="LightGray"
+                        BorderBrush="MintCream"
+                        BorderThickness="0,0,0,2"
+                        VerticalContentAlignment="Center"
+                        Padding="20,0,0,0" Margin="288,201,288,287" Grid.Row="1"
+                         Visibility="Collapsed">
+                    <TextBox.Background>
+                        <ImageBrush ImageSource="/key-icon.png"
+                                        Stretch="None"
+                                        AlignmentX="Left"/>
+                    </TextBox.Background>
+                </TextBox>
+                <Button x:Name="btnLogin"                          
                             BorderThickness="0"
                             Content="BEJELENTKEZÉS"
                             Foreground="White"
                             FontSize="12"
                             FontFamily="Montserrat"
                             Cursor="Hand"                           
-                            Margin="0,50,0,0"
+                            Margin="288,307,288,169"
                             Click="btn_Login_Click"
-                            IsDefault="True">
-                        <Button.Style>
-                            <Style TargetType="Button">
-                                <Setter Property="Background" Value="#FFD6AB00"/>
-                                <Style.Triggers>
-                                    <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#FFEDAF28"/>
-                                    </Trigger>
-                                </Style.Triggers>
-                            </Style>
-                        </Button.Style>
-                        <Button.Template>
-                            <ControlTemplate TargetType="Button">
-                                <Border Width="150" Height="40"
+                            IsDefault="True" Grid.Row="1">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="#FFD6AB00"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#FFEDAF28"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Width="150" Height="40"
                                         CornerRadius="20"
                                         Background="{TemplateBinding Background}">
-                                    <ContentPresenter VerticalAlignment="Center"
+                                <ContentPresenter VerticalAlignment="Center"
                                                       HorizontalAlignment="Center"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
-                    </Button>
-                </StackPanel>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
             </Grid>
         </Border>
 

@@ -27,7 +27,7 @@ namespace eCeruza
         Dictionary<string, List<string>> subjects = new Dictionary<string, List<string>>();
         List<Student> students = JsonSerializer.Deserialize<Student[]>(File.ReadAllText("Source/students.json")).ToList();
         List<Teacher> teachers = JsonSerializer.Deserialize<Teacher[]>(File.ReadAllText("Source/teachers.json")).ToList();
-        
+
 
         //Tanárok classSubject prop-jából ki lehet olvasni
         public MainWindow()
@@ -42,7 +42,7 @@ namespace eCeruza
             string subject;
             foreach (Teacher teacher in teachers)
             {
-                foreach(KeyValuePair<string, string> classSubject in teacher.ClassSubject)
+                foreach (KeyValuePair<string, string> classSubject in teacher.ClassSubject)
                 {
                     className = classSubject.Key;
                     subject = classSubject.Value;
@@ -50,7 +50,7 @@ namespace eCeruza
                     {
                         subjects.Add(className, new List<string>() { subject });
                     }
-                    if(!subjects[className].Contains(subject))
+                    if (!subjects[className].Contains(subject))
                     {
                         subjects[className].Add(subject);
                     }
@@ -61,7 +61,7 @@ namespace eCeruza
         private void btn_Login_Click(object sender, RoutedEventArgs e)
         {
             string name = tb_Name.Text;
-            string password = tb_Password.Text;
+            string password = pb_Password.Password;
             int accountType = 0;
             bool correctPassword = false;
             //0-nincs, 1-teacher 2-student
@@ -118,6 +118,18 @@ namespace eCeruza
             Application.Current.Shutdown();
         }
 
+        private void cbShowPass_Checked(object sender, RoutedEventArgs e)
+        {
+            tb_Password.Text = pb_Password.Password;
+            pb_Password.Visibility = Visibility.Collapsed;
+            tb_Password.Visibility = Visibility.Visible;
+        }
 
+        private void cbShowPass_Unchecked(object sender, RoutedEventArgs e)
+        {
+            pb_Password.Password = tb_Password.Text;
+            tb_Password.Visibility = Visibility.Collapsed;
+            pb_Password.Visibility = Visibility.Visible;
+        }
     }
 }

@@ -44,3 +44,26 @@ Z:\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\refint\eCeruza.dll
 Z:\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza.pdb
 Z:\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza.genruntimeconfig.cache
 Z:\eCeruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\ref\eCeruza.dll
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\bin\Debug\net6.0-windows\eCeruza.exe
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\bin\Debug\net6.0-windows\Source\Students.json
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\bin\Debug\net6.0-windows\Source\Teachers.json
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\bin\Debug\net6.0-windows\eCeruza.deps.json
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\bin\Debug\net6.0-windows\eCeruza.runtimeconfig.json
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\bin\Debug\net6.0-windows\eCeruza.dll
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\bin\Debug\net6.0-windows\eCeruza.pdb
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza.csproj.AssemblyReference.cache
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza_MarkupCompile.cache
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza_MarkupCompile.lref
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza.g.resources
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza.AssemblyInfoInputs.cache
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza.AssemblyInfo.cs
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza.csproj.CoreCompileInputs.cache
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza.dll
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\refint\eCeruza.dll
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza.pdb
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\eCeruza.genruntimeconfig.cache
+C:\Users\kriszkev\Desktop\keghe kukis házijai\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\eceruza\eCeruza\eCeruza\obj\Debug\net6.0-windows\ref\eCeruza.dll
