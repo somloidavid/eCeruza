@@ -37,10 +37,18 @@ namespace eCeruza
                     l.HorizontalAlignment = HorizontalAlignment.Center;
                     l.FontSize = 25;
                     l.BorderBrush = Brushes.Black;
-                    l.Content = Orarend[i, j];
                     Grid.SetRow(l, j + 1);
                     Grid.SetColumn(l, i);
-                    TimeTable.Children.Add(l);
+                    if (Orarend[i, j] == "Idegennyelv")
+                    {
+                        l.Content = MainWindow.SLoginName.Language;
+                        TimeTable.Children.Add(l);
+                    }
+                    else
+                    {
+                        l.Content = Orarend[i, j];
+                        TimeTable.Children.Add(l);
+                    }
                 }
             }
         }
