@@ -17,6 +17,17 @@
     <None Include="Generate.cs" />
 	<None Remove="ceruzaIMG.png" />
 	<None Remove="favicon.png" />
+    <None Remove="favicon.png" />
+    <None Remove="key-icon.png" />
+    <None Remove="loginBGofflogo.png" />
+    <None Remove="user-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="favicon.png" />
+    <Resource Include="key-icon.png" />
+    <Resource Include="loginBGofflogo.png" />
+    <Resource Include="user-icon.png" />
   </ItemGroup>
 
   <ItemGroup>

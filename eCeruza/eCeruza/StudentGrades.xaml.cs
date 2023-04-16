@@ -15,9 +15,17 @@ using System.Windows.Shapes;
 
 namespace eCeruza
 {
+
     public partial class StudentGrades : Window
     {
-        public List<Grade> gradesInSubject = new();
+        #region Colors
+        static BrushConverter bc = new();
+        public static Brush yellow = (Brush)bc.ConvertFrom("#FFA500");
+        public static Brush grey = (Brush)bc.ConvertFrom("#FFD4D4D4");
+        public static Brush brown = (Brush)bc.ConvertFrom("#830C0B");
+        #endregion
+        static public List<Grade> gradesInSubject = new();
+        static public GhostGrade GG;
         public StudentGrades()
         {
             foreach (Grade grade in MainWindow.User.Grades)
@@ -47,46 +55,65 @@ namespace eCeruza
                 }
             }
             lbl_Teacher.Content = teacher.Name;
+            
             for (int i = 0; i < gradesInSubject.Count; i++)
             {
+                #region Initialize
                 RowDefinition rd = new();
-                BrushConverter bc = new();
-                Brush yellow = (Brush)bc.ConvertFrom("#FFA500");
-                yellow.Freeze();
                 rd.Height = new GridLength(150);
-                grd_Grades.RowDefinitions.Add(rd);
-                Grid griddy = new();
-                griddy.Width = 800;
-                griddy.Height = 900 / 6;
-                griddy.Width = 800;
-                grd_Grades.Children.Add(griddy);
-                Grid.SetRow(griddy, i);
+                Grid grd_Grade = new();
                 Label lbl_Value = new();
                 Label lbl_Message = new();
                 Label lbl_Date = new();
+                Border border = new Border();
+                #endregion
+                #region GradeStyle
+                grd_Grade.Height = 120;
+                grd_Grade.Width = 700;
+                grd_Grade.Margin = new Thickness(0, 20, 0, 0);
+                border.CornerRadius = new CornerRadius(30);
+                border.Background = brown;
+                #endregion
+                #region LabelStyle
+                #region FontColor
                 lbl_Value.Foreground = yellow;
                 lbl_Message.Foreground = yellow;
                 lbl_Date.Foreground = yellow;
-                lbl_Value.FontSize = 30;
-                lbl_Message.FontSize = 30;
-                lbl_Date.FontSize = 30;
-                lbl_Value.Content = gradesInSubject[i].Value;
-                lbl_Message.Content = gradesInSubject[i].Message;
-                lbl_Date.Content = gradesInSubject[i].Date;
-                lbl_Value.Width = 50;
-                lbl_Message.Width = 300;
-                lbl_Date.Width = 400;
-                lbl_Value.Height = 900 / 6;
-                lbl_Message.Height = 900 / 6;
-                lbl_Date.Height = 900 / 6;
-                lbl_Value.Margin = new Thickness(0, 0, 750, 0);
-                lbl_Date.Margin = new Thickness(600, 0, 0, 0);
+                #endregion
+                #region FontSize
                 lbl_Value.FontSize = 34;
                 lbl_Message.FontSize = 34;
                 lbl_Date.FontSize = 34;
-                griddy.Children.Add(lbl_Value);
-                griddy.Children.Add(lbl_Message);
-                griddy.Children.Add(lbl_Date);
+                #endregion
+                #region Content
+                lbl_Value.Content = gradesInSubject[i].Value;
+                lbl_Message.Content = gradesInSubject[i].Message;
+                lbl_Date.Content = gradesInSubject[i].Date;
+                #endregion
+                #region Width
+                lbl_Value.Width = 50;
+                lbl_Message.Width = 300;
+                lbl_Date.Width = 400;
+                #endregion
+                #region Height
+                lbl_Value.Height = 120;
+                lbl_Message.Height = 120;
+                lbl_Date.Height = 120;
+                #endregion
+                #region Margin
+                lbl_Value.Margin = new Thickness(0, 0, 500, 0);
+                lbl_Date.Margin = new Thickness(500, 0, 0, 0);
+                #endregion
+                #endregion
+                #region Add
+                grd_Grade.Children.Add(border);
+                grd_Grade.Children.Add(lbl_Value);
+                grd_Grade.Children.Add(lbl_Message);
+                grd_Grade.Children.Add(lbl_Date);
+                grd_Grades.RowDefinitions.Add(rd);
+                Grid.SetRow(grd_Grade, i);
+                grd_Grades.Children.Add(grd_Grade);
+                #endregion
             }
         }
 
@@ -94,6 +121,25 @@ namespace eCeruza
         {
             StudentClasses studentClasses = new StudentClasses();
             Application.Current.MainWindow.Content = studentClasses.Content;
+        }
+
+        
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            GG = new GhostGrade();
+            GG.Show();
+        }
+
+        private void button_Logout_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mw = new();
+            Application.Current.MainWindow.Content = mw.Content; 
+        }
+
+        private void button_logoutClose_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

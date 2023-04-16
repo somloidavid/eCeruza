@@ -1,0 +1,39 @@
+﻿<Window x:Class="eCeruza.GhostGrade"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:eCeruza"
+        mc:Ignorable="d"
+        Title="GhostGrade" Height="450" Width="800" AllowsTransparency="True" Background="Transparent" WindowStyle="None"  ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Border CornerRadius="20" BorderThickness="3" BorderBrush="#FF830C0B" Background="White">
+            <Label x:Name="lbl_Close" Content="X" Margin="747,-3,-3,397" RenderTransformOrigin="-0.008,-4.517" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" FontWeight="Bold" Foreground="#FF830C0B" MouseDown="lbl_Close_MouseDown" Cursor="Hand"/>
+        </Border>
+        <Label Content="Átlag:" HorizontalAlignment="Left" Margin="295,43,0,0" VerticalAlignment="Top" Height="60" Width="100" FontSize="36"/>
+        <Label x:Name="lbl_Avg" Content="" HorizontalAlignment="Left" Margin="400,43,0,0" VerticalAlignment="Top" Width="100" Height="60" FontSize="36"/>
+        <Grid>
+            <Grid x:Name="grd_Values" Width="400" Height="60" Background="#FF830C0B">
+                <Label Content="1" Width="80" FontSize="36" Margin="0, 0, 320, 0"  Background="#FF830C0B" Foreground="#FFA500" BorderBrush="{x:Null}" MouseDown="Button_Click" HorizontalContentAlignment="Center" Cursor="Hand"/>
+                <Label Content="2" Width="80" FontSize="36" Margin="0, 0, 160, 0" Background="#FF830C0B" Foreground="#FFA500" BorderBrush="{x:Null}" MouseDown="Button_Click" HorizontalContentAlignment="Center" Cursor="Hand"/>
+                <Label Content="3" Width="80" FontSize="36" Background="#FF830C0B" Foreground="#FFA500" BorderBrush="{x:Null}" MouseDown="Button_Click" HorizontalContentAlignment="Center" Cursor="Hand"/>
+                <Label Content="4" Width="80" FontSize="36" Margin="160, 0, 0, 0" Background="#FF830C0B" Foreground="#FFA500" BorderBrush="{x:Null}" MouseDown="Button_Click" HorizontalContentAlignment="Center" Cursor="Hand"/>
+                <Label Content="5" Width="80" FontSize="36" Margin="320, 0, 0, 0" Background="#FF830C0B" Foreground="#FFA500" BorderBrush="{x:Null}" MouseDown="Button_Click" HorizontalContentAlignment="Center" Cursor="Hand"/>
+            </Grid>
+            <Grid Margin="210,268,210,74">
+                <Label x:Name="lbl_Number" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" Height="60" RenderTransformOrigin="0.5,0.5">
+                </Label>
+                <Grid MouseDown="Add" x:Name="s">
+                    <Border CornerRadius="10" Background="#FF830C0B"  Height="90" Width="90" Margin="37,0,248,0" >
+                        <Label Content="-" HorizontalAlignment="Center" VerticalAlignment="Top" Height="80" Width="90" Cursor="Hand" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="50" FontWeight="Bold" Foreground="Orange"/>
+                    </Border>
+                </Grid>
+                <Grid MouseDown="Add" x:Name="a">
+                    <Border CornerRadius="10" Background="#FF830C0B"  Height="90" Width="90" Margin="247,0,38,0">
+                        <Label Content="+" HorizontalAlignment="Center" VerticalAlignment="Top" Height="80" Width="90" Cursor="Hand" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="50" FontWeight="Bold" Foreground="Orange"/>
+                    </Border>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

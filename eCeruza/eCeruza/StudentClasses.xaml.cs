@@ -117,6 +117,9 @@ namespace eCeruza
                 lbl_Avg.VerticalAlignment = VerticalAlignment.Center;
                 lbl_ClassAvg.VerticalAlignment = VerticalAlignment.Center;
                 lbl_ClassAvg.FontSize = 32;
+                grd.Margin = new Thickness(50, 0, 0, 0);
+                CursorConverter cc = new();
+                grd.Cursor = Cursors.Hand;
                 grd.Children.Add(lbl_Subject);
                 grd.Children.Add(lbl_Avg);
                 grd.Children.Add(lbl_ClassAvg);

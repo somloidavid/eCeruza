@@ -126,7 +126,7 @@ namespace eCeruza
         private void btn_Login_Click(object sender, RoutedEventArgs e)
         {
             string name = tb_Name.Text;
-            string password = tb_Password.Text;
+            string password = pb_Password.Password;
             int accountType = 0;
             bool correctPassword = false;
             //0-nincs, 1-teacher 2-student
@@ -142,7 +142,6 @@ namespace eCeruza
                         loginName = teachers[index];
                         Teacher_Classes window = new Teacher_Classes();
                         Application.Current.MainWindow.Content = window.Content;
-
                     }
                 }
                 index++;
@@ -161,6 +160,8 @@ namespace eCeruza
                         allSubjects = User.Subjects;
                         allSubjects.Add(User.Language);
                         allSubjects.Sort();
+                        List<Grade> SortedList = User.Grades.OrderBy(o => o.Date).ToList();
+                        User.Grades = SortedList;
                         StudentClasses studentClasses = new StudentClasses();
                         Application.Current.MainWindow.Content = studentClasses.Content;
                     }
@@ -176,17 +177,34 @@ namespace eCeruza
                 MessageBox.Show("Helytelen Jelszó!");
             }
         }
-
-        private void tb_Name_TextChanged(object sender, TextChangedEventArgs e)
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            TextBox textBox = sender as TextBox;
-            textBox.Opacity = 100;
+            if (e.LeftButton == MouseButtonState.Pressed)
+                DragMove();
         }
 
-        private void tb_Password_TextChanged(object sender, TextChangedEventArgs e)
+        private void btnMinimize_Click(object sender, RoutedEventArgs e)
         {
-            TextBox textBox = sender as TextBox;
-            textBox.Opacity = 100;
+            WindowState = WindowState.Minimized;
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void cbShowPass_Checked(object sender, RoutedEventArgs e)
+        {
+            tb_Password.Text = pb_Password.Password;
+            pb_Password.Visibility = Visibility.Collapsed;
+            tb_Password.Visibility = Visibility.Visible;
+        }
+
+        private void cbShowPass_Unchecked(object sender, RoutedEventArgs e)
+        {
+            pb_Password.Password = tb_Password.Text;
+            tb_Password.Visibility = Visibility.Collapsed;
+            pb_Password.Visibility = Visibility.Visible;
         }
     }
 }
