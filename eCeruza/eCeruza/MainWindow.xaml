@@ -5,96 +5,241 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:eCeruza"
         mc:Ignorable="d"
-
-    Title="eCeruza" Height="1080" Width="1920" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/favicon.png" WindowState="Maximized" WindowStyle="None">
-
-
-    <Grid>
-        <Image Margin="44,685,1396,-102" Source="/ceruzaIMG.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="75"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Image Margin="88,331,1352,253" Source="/ceruzaIMG.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-160"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Image Margin="-14,-40,1454,624" Source="/ceruzaIMG.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-60"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Image Margin="1316,578,124,6" Source="/ceruzaIMG.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="170"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Image Margin="1316,262,124,322" Source="/ceruzaIMG.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="50"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Image Margin="1228,11,212,573" Source="/ceruzaIMG.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-10"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Border BorderThickness="0" Margin="607,68,530,0" Background="Orange">
-            <Border BorderBrush="Black" BorderThickness="0" Margin="-156,-16,0,0" Background="Orange" HorizontalAlignment="Left" Width="898">
-                <Label Content="Ceruza" HorizontalAlignment="Center" Height="143" Margin="0,20,0,0" VerticalAlignment="Top" Width="322" FontSize="100" Foreground="#FF830C0B" FontWeight="Bold"/>
-            </Border>
+        Title="MainWindow" Height="550" Width="800"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        AllowsTransparency="True" Icon="/favicon.png"
+        MouseDown="Window_MouseDown">
+    <Border CornerRadius="12">
+        <Border.Background>
+            <ImageBrush ImageSource="/loginBGofflogo.png"
+                        Stretch="Fill"/>
+        </Border.Background>
+        <Border CornerRadius="10"                    
+            BorderThickness="2"
+            Opacity="0.95">
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#1C0A00" Offset="0"/>
+                    <GradientStop Color="#361500" Offset="0.75"/>
+                    <GradientStop Color="#603601" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Color="#FFEAC130" Offset="0"/>
+                    <GradientStop Color="#FF79471C" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="5"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Bejelntkezés"
+                               Foreground="white"
+                               FontSize="10"
+                               FontFamily="Montserrat"
+                               Grid.Column="0"
+                               VerticalAlignment="Center"
+                               Margin="10,0,0,0"/>
+                    <Button x:Name="btnMinimize"                           
+                            BorderThickness="0"
+                            Content="-"
+                            Foreground="White"
+                            FontSize="16"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"
+                            Grid.Column="1"
+                            Click="btnMinimize_Click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#603601"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#FF4E2C01"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="18" Height="18"
+                                        CornerRadius="9"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="btnClose"                          
+                            BorderThickness="0"
+                            Content="X"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"
+                            Grid.Column="2"
+                            Click="btnClose_Click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#FF441A03"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#FF381602"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="18" Height="18"
+                                        CornerRadius="9"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid>
+                <StackPanel Width="220"
+                            Grid.Row="1"
+                            Orientation="Vertical"
+                            Margin="0,35,0,0">
+                    <TextBlock Text="eCeruza"
+                               Foreground="White"
+                               FontSize="25"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               HorizontalAlignment="Center"/>
+                    <TextBlock Text="majdnem működő enaplo or sumshit"
+                               Foreground="LightGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               Margin="0,5,0,0"/>
+                    <TextBlock Text="Felhasználónév"
+                               Foreground="LightGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"                             
+                               Margin="0,35,0,0"/>
+                    <TextBox x:Name="tb_Name"
+                             FontSize="13"
+                             FontWeight="Medium"
+                             FontFamily="Montserrat"                            
+                             Foreground="MintCream"
+                             CaretBrush="LightGray"
+                             BorderBrush="MintCream"
+                             BorderThickness="0,0,0,2"
+                             Height="28"
+                             VerticalContentAlignment="Center"
+                             Margin="0,5,0,0"
+                             Padding="20,0,0,0">
+                        <TextBox.Background>
+                            <ImageBrush ImageSource="/user-icon.png"
+                                        Stretch="None"
+                                        AlignmentX="Left">
+                                <ImageBrush.Transform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                        <SkewTransform AngleX="0" AngleY="-1"/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </ImageBrush.Transform>
+                            </ImageBrush>
+                        </TextBox.Background>
+                    </TextBox>
+                    <TextBlock Text="Jelszó"
+                               Foreground="LightGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"                             
+                               Margin="0,15,0,0"/>
+                    <PasswordBox x:Name="pb_Password"
+                             FontSize="13"
+                             FontWeight="Medium"
+                             FontFamily="Montserrat"                            
+                             Foreground="MintCream"
+                             CaretBrush="LightGray"
+                             BorderBrush="MintCream"
+                             BorderThickness="0,0,0,2"
+                             Height="28"
+                             VerticalContentAlignment="Center"
+                             Margin="0,5,0,0"
+                             Padding="20,0,0,0">
+                        <PasswordBox.Background>
+                            <ImageBrush ImageSource="/key-icon.png"
+                                        Stretch="None"
+                                        AlignmentX="Left"/>
+                        </PasswordBox.Background>
+                    </PasswordBox>
+                </StackPanel>
+                <CheckBox x:Name="cbShowPass" Content="Jelszó megjelenítése" Foreground="LightGray" Margin="288,243,288,258" Grid.Row="1" Checked="cbShowPass_Checked" Unchecked="cbShowPass_Unchecked" IsChecked="False"/>
+                <TextBox x:Name="tb_Password"
+                        FontSize="13"
+                        FontWeight="Medium"
+                        FontFamily="Montserrat"                            
+                        Foreground="MintCream"
+                        CaretBrush="LightGray"
+                        BorderBrush="MintCream"
+                        BorderThickness="0,0,0,2"
+                        VerticalContentAlignment="Center"
+                        Padding="20,0,0,0" Margin="288,201,288,287" Grid.Row="1"
+                         Visibility="Collapsed">
+                    <TextBox.Background>
+                        <ImageBrush ImageSource="/key-icon.png"
+                                        Stretch="None"
+                                        AlignmentX="Left"/>
+                    </TextBox.Background>
+                </TextBox>
+                <Button x:Name="btnLogin"                          
+                            BorderThickness="0"
+                            Content="BEJELENTKEZÉS"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"                           
+                            Margin="288,307,288,169"
+                            Click="btn_Login_Click"
+                            IsDefault="True" Grid.Row="1">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="#FFD6AB00"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#FFEDAF28"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </Grid>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="0" Margin="1345,90,545,0" Background="White"/>
-        <Border BorderBrush="Black" BorderThickness="1" Margin="636,263,760,565" Background="White" CornerRadius="75,75,75,75"/>
-        <Border BorderBrush="Black" BorderThickness="1" Margin="636.5,408,760.5,630" Background="#E5505050" CornerRadius="3,3,3,3" Height="26.04"/>
 
-        <Button x:Name="btn_Login" Content="Bejelentkezés" Margin="750,532,852,455" Click="btn_Login_Click" RenderTransformOrigin="1,0" Foreground="#FFD9D9D9" FontWeight="Bold" FontSize="18" IsDefault="True">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border CornerRadius="10"
-                            Background="#FF830C0B"
-                            BorderThickness="1">
-                        <ContentPresenter
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Center"
-                            Margin="{TemplateBinding Padding}" OpacityMask="Black" />
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <TextBox x:Name="tb_Name" HorizontalAlignment="Left" Margin="658,332,0,0" TextWrapping="Wrap" Text="Név" VerticalAlignment="Top" Width="444" Height="19" BorderThickness="0,0,0,0" FontWeight="Bold" FontSize="16" Foreground="#FF505050" Opacity="0.5" TextChanged="tb_Name_TextChanged"/>
-        <TextBox x:Name="tb_Password" HorizontalAlignment="Left" Margin="658,388,0,0" TextWrapping="Wrap" Text="Jelszó" VerticalAlignment="Top" Width="444" Height="19" BorderThickness="0,0,0,0" FontWeight="Bold" FontSize="16" Foreground="#FF505050" TextChanged="tb_Password_TextChanged" Opacity="0.5"/>
-        <Border BorderBrush="Black" BorderThickness="1" Margin="636,352,760,686" Background="#E5505050" CornerRadius="3,3,3,3"/>
-    </Grid>
+    </Border>
 </Window>

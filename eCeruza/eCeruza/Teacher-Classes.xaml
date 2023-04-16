@@ -6,7 +6,6 @@
         xmlns:local="clr-namespace:eCeruza"
         mc:Ignorable="d"
         Title="Teacher_Classes" Height="1080" Width="1920">
-    <Grid>
         <Grid x:Name="grSubjects" Margin="194,234,250,38" Grid.ColumnSpan="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -57,8 +56,10 @@
             </Grid>
         </Grid>
 
+
         <Grid x:Name="grd_Horizontal" Height="100" Margin="0,0,0,980" Background="#FF830C0B">
             <Label Content="eCeruza-Tanár" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="80" Width="300" FontSize="40" VerticalContentAlignment="Center" Foreground="Orange" FontWeight="DemiBold"/>
         </Grid>
+
     </Grid>
 </Window>
