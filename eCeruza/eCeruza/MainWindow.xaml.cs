@@ -132,6 +132,10 @@ namespace eCeruza
                     {
                         correctPassword = true;
                         loginName = teachers[index];
+                        Application.Current.MainWindow.Height = 1080;
+                        Application.Current.MainWindow.Width = 1920;
+                        Application.Current.MainWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                        Application.Current.MainWindow.WindowState = WindowState.Maximized;
                         Teacher_Classes window = new Teacher_Classes();
                         Application.Current.MainWindow.Content = window.Content;
                     }
@@ -153,6 +157,10 @@ namespace eCeruza
                         allSubjects.Sort();
                         List<Grade> SortedList = User.Grades.OrderBy(o => o.Date).ToList();
                         User.Grades = SortedList;
+                        Application.Current.MainWindow.Height = 1080;
+                        Application.Current.MainWindow.Width = 1920;
+                        Application.Current.MainWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                        Application.Current.MainWindow.WindowState = WindowState.Maximized;
                         StudentClasses studentClasses = new StudentClasses();
                         Application.Current.MainWindow.Content = studentClasses.Content;
                     }

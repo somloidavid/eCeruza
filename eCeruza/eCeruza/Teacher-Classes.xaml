@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:eCeruza"
         mc:Ignorable="d"
         Title="Teacher_Classes" Height="1080" Width="1920">
-    <Grid>
+    <Grid Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="43*"/>
             <ColumnDefinition Width="47*"/>
@@ -36,7 +36,7 @@
         <Border BorderThickness="1" HorizontalAlignment="Left" Height="1424" VerticalAlignment="Center" Width="80" Background="Orange"/>
 
         <Button Content="Osztályok" HorizontalAlignment="Left" Margin="15,153,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FF707070" Background="#FFF0C8B9"/>
-        <Button Content="Órarend" HorizontalAlignment="Left" Margin="15,234,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FF707070" Background="#FFF0C8B9"/>
+        <Button Content="Órarend" HorizontalAlignment="Left" Margin="15,234,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FF707070" Background="#FFF0C8B9" Click="Button_Click"/>
         <Button Content="Események" HorizontalAlignment="Left" Margin="15,312,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="#FFF0C8B9" BorderBrush="#FF707070"/>
 
         <Border BorderBrush="Black" BorderThickness="1" Margin="0,0,0,964" Background="#FF830C0B" Grid.ColumnSpan="2" HorizontalAlignment="Right" Width="1933" Height="100" VerticalAlignment="Bottom">

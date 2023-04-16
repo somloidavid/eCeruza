@@ -8,26 +8,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Generate.cs" />
-	<Resource Include="ceruzaIMG.png" />
-	<Resource Include="favicon.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Generate.cs" />
-	<None Remove="ceruzaIMG.png" />
-	<None Remove="favicon.png" />
-    <None Remove="favicon.png" />
-    <None Remove="key-icon.png" />
-    <None Remove="loginBGofflogo.png" />
-    <None Remove="user-icon.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="favicon.png" />
-    <Resource Include="key-icon.png" />
-    <Resource Include="loginBGofflogo.png" />
-    <Resource Include="user-icon.png" />
+    <None Include="Generate.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+	  <None Include="ceruzaIMG.png" />
+	  <Resource Include="favicon.png" />
+    <Resource Include="key-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="loginBGofflogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="user-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>

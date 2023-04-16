@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:eCeruza"
         mc:Ignorable="d"
         Title="StudentClasses" Height="1080" Width="1920" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None">
-    <Grid Margin="0, 0,0,0">
+    <Grid Margin="0, 0,0,0" Background="White">
         <Grid x:Name="grd_Vertical" Width="106" Margin="0,0,1814,0" Background="#FFA500">
             <Button x:Name="button_TimeTable" Content="" HorizontalAlignment="Center" Height="60" Margin="0,118,0,0" VerticalAlignment="Top" Width="66" Cursor="Hand"/>
             <Button x:Name="button_Logout" Content="" HorizontalAlignment="Center" Height="60" Margin="0,195,0,0" VerticalAlignment="Top" Width="66" Cursor="Hand"/>

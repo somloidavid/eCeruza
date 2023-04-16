@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace eCeruza
 {
     /// <summary>
-    /// Interaction logic for Teacher_Class.xaml
+    /// Interaction logic for TeacherClass.xaml
     /// </summary>
-    public partial class Teacher_Class : Window
+    public partial class TeacherClass : Window
     {
-        public Teacher_Class()
+        public TeacherClass()
         {
             InitializeComponent();
         }

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:eCeruza"
         mc:Ignorable="d"
         Title="eCeruza" Height="1080" Width="1920" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/favicon.png">
-    <Grid>
+    <Grid Background="White">
         <Border  Background="#FF830C0B" Margin="416,292,142,654" />
         <Grid Height="90" Width="1287" RenderTransformOrigin="0.512,0.617" Margin="494,382,139,592">
             <Grid.ColumnDefinitions>

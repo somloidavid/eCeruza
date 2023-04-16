@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="StudentGrades" Height="1080" Width="1920" WindowStyle="None">
 
-    <Grid x:Name="grd_Main" Height="1080">
+    <Grid x:Name="grd_Main" Height="1080" Background="White">
         <Label x:Name="lbl_Subject" Content="LABEL" Margin="180,101,740,899" Width="1000" FontSize="40" Foreground="#830C0B" FontWeight="Bold"/>
         <ScrollViewer Width="800" Height="850"  HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Visible" Margin="180,180,940,48">
             <Grid x:Name="grd_Grades" Width="800" Height="850">
