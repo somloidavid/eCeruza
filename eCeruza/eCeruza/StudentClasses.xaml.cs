@@ -106,7 +106,17 @@ namespace eCeruza
                 lbl_Avg.Margin = new Thickness(400, 0, 0, 0);
                 lbl_Avg.Content = avgGrades[MainWindow.AllSubjects[i]];
                 Label lbl_ClassAvg = new Label();
-                lbl_ClassAvg.Margin = new Thickness(500, 0, 0, 0);
+                Label person = new Label();
+                person.Background = new ImageBrush(new BitmapImage(new Uri("Source/img/person.png", UriKind.Relative)));
+                person.Height = 50;
+                person.Width = 50;
+                person.Margin = new Thickness(50, 0, 0, 0);
+                Label people = new Label();
+                people.Background = new ImageBrush(new BitmapImage(new Uri("Source/img/people.png", UriKind.Relative)));
+                people.Height = 50;
+                people.Width = 50;
+                people.Margin = new Thickness(450, 0, 0, 0);
+                lbl_ClassAvg.Margin = new Thickness(600, 0, 0, 0);
                 lbl_ClassAvg.Content = ClassAvg[MainWindow.AllSubjects[i]];
                 lbl_Subject.Foreground = yellow;
                 lbl_Avg.Foreground = yellow;
@@ -118,10 +128,11 @@ namespace eCeruza
                 lbl_ClassAvg.VerticalAlignment = VerticalAlignment.Center;
                 lbl_ClassAvg.FontSize = 32;
                 grd.Margin = new Thickness(50, 0, 0, 0);
-                CursorConverter cc = new();
                 grd.Cursor = Cursors.Hand;
                 grd.Children.Add(lbl_Subject);
+                grd.Children.Add(person);
                 grd.Children.Add(lbl_Avg);
+                grd.Children.Add(people);
                 grd.Children.Add(lbl_ClassAvg);
                 Grid grid = grd_Container.Children[i] as Grid;
                 grid.Children.Add(grd);
@@ -132,6 +143,16 @@ namespace eCeruza
         {
             Students_Timetable w = new Students_Timetable();
             Application.Current.MainWindow.Content = w.Content;
+        }
+
+        private void button_Logout_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            StudentGrades.button_Logout_Click(sender, e);
+        }
+
+        private void button_logoutClose_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            StudentGrades.button_logoutClose_Click(sender, e);
         }
     }
 }

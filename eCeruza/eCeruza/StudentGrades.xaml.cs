@@ -131,7 +131,7 @@ namespace eCeruza
             GG.Show();
         }
 
-        private void button_Logout_Click(object sender, RoutedEventArgs e)
+        static public void button_Logout_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mw = new();
             Application.Current.MainWindow.WindowState = WindowState.Normal;
@@ -140,9 +140,25 @@ namespace eCeruza
             Application.Current.MainWindow.Content = mw.Content; 
         }
 
-        private void button_logoutClose_Click(object sender, RoutedEventArgs e)
+        static public void button_logoutClose_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
+        }
+
+        private void button_TimeTable_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Students_Timetable st = new Students_Timetable();
+            Application.Current.MainWindow.Content = st;
+        }
+
+        private void button_Logout_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            button_Logout_Click(sender, e);
+        }
+
+        private void button_logoutClose_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            button_logoutClose_Click(sender, e);
         }
     }
 }
