@@ -58,12 +58,12 @@ namespace eCeruza
 
         private void button_Logout_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            //StudentGrades.button_Logout_Click(sender, e);
+            StudentGrades.button_Logout_Click(sender, e);
         }
 
         private void button_logoutClose_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            //StudentGrades.button_logoutClose_Click(sender, e);
+            StudentGrades.button_logoutClose_Click(sender, e);
         }
 
 
