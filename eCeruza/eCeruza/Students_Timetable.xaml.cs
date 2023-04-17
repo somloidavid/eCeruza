@@ -21,7 +21,7 @@ namespace eCeruza
     {
         private void button_TimeTable_Click(object sender, MouseButtonEventArgs e)
         {
-            Teacher_Classes w = new Teacher_Classes();
+            StudentClasses w = new StudentClasses();
             Application.Current.MainWindow.Content = w.Content;
         }
 

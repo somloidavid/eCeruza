@@ -71,6 +71,9 @@
             <Border CornerRadius="10" Background="#FF830C0B"  Height="120" Width="120" Margin="1005,910,795,50">
                 <Label Content="+" HorizontalAlignment="Center" VerticalAlignment="Top" Height="110" Width="120" MouseDown="Button_Click" Cursor="Hand" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="50" FontWeight="Bold" Foreground="Orange"/>
             </Border>
+            <Label x:Name="lbl_Teacher_Copy" Content="203, 14" FontSize="46" Margin="1316,540,168,464" Foreground="Orange" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label x:Name="lbl_Teacher_Copy1" Content="Hétfő: 1,2" FontSize="46" Margin="1316,824,168,180" Foreground="Orange" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label x:Name="lbl_Teacher_Copy2" Content="Kedd: 5" FontSize="46" Margin="1316,894,168,110" Foreground="Orange" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         </Grid>
     </Grid>
 </Window>

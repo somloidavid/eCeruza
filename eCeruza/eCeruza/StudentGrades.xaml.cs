@@ -148,7 +148,7 @@ namespace eCeruza
         private void button_TimeTable_MouseDown(object sender, MouseButtonEventArgs e)
         {
             Students_Timetable st = new Students_Timetable();
-            Application.Current.MainWindow.Content = st;
+            Application.Current.MainWindow.Content = st.Content;
         }
 
         private void button_Logout_MouseDown(object sender, MouseButtonEventArgs e)
